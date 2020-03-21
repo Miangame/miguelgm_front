@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import Head from "../components/Head";
 
 class LandingApp extends App {
-  public render() {
+  public render():any {
     const { Component, pageProps } = this.props;
     return (
       <React.Fragment>
