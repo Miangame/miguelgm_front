@@ -6,7 +6,7 @@ import NavbarComponent from "./Navbar";
 const Layout = ({ children }) => (
   <div>
     <Head>
-      <title>Admon. Loterías Ntra. Sra. de los Remedios</title>
+      <title>Miguel Ángel Gavilán Merino</title>
     </Head>
     <NavbarComponent />
     {children}
