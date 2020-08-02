@@ -1,0 +1,6 @@
+export const HOME_HREF = '/'
+export const PRESENTATIONS_HREF = '/presentations'
+export const POSTS_HREF = '/posts'
+export const EDUCATION_HREF = '/education'
+export const WORK_EXPERIENCE_HREF = '/work-experience'
+export const CONTACT_HREF = '/contact'
