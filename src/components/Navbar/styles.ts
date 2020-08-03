@@ -30,8 +30,7 @@ export const Ul = styled.ul`
     flex-flow: column nowrap;
     background-color: #0d2538;
     position: fixed;
-    transform: ${(props: NavigationMenu) =>
-      props.open ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
     height: 100vh;
