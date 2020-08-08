@@ -26,11 +26,22 @@ export const Ul = styled.ul`
     padding: 18px 16px;
   }
 
+  ${(props: NavigationMenu) => {
+    if (props.open) {
+      return media.lessThan('md')`
+        transform: translateX(0);
+      `
+    }
+
+    return media.lessThan('md')`
+      transform: translateX(100%);
+    `
+  }}
+
   ${media.lessThan('md')`
     flex-flow: column nowrap;
     background-color: #0d2538;
     position: fixed;
-    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
     height: 100vh;

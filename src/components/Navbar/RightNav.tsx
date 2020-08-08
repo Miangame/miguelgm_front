@@ -22,22 +22,34 @@ const RightNav = (props: RightNavProps) => {
   return (
     <Ul open={open}>
       <li>
-        <Link href={HOME_HREF}>Inicio</Link>
+        <Link href={HOME_HREF}>
+          <a>Inicio</a>
+        </Link>
       </li>
       <li>
-        <Link href={PRESENTATIONS_HREF}>Ponencias</Link>
+        <Link href={PRESENTATIONS_HREF}>
+          <a>Ponencias</a>
+        </Link>
       </li>
       <li>
-        <Link href={POSTS_HREF}>Posts</Link>
+        <Link href={POSTS_HREF}>
+          <a>Posts</a>
+        </Link>
       </li>
       <li>
-        <Link href={EDUCATION_HREF}>Formación</Link>
+        <Link href={EDUCATION_HREF}>
+          <a>Formación</a>
+        </Link>
       </li>
       <li>
-        <Link href={WORK_EXPERIENCE_HREF}>Experiencia laboral</Link>
+        <Link href={WORK_EXPERIENCE_HREF}>
+          <a>Experiencia laboral</a>
+        </Link>
       </li>
       <li>
-        <Link href={CONTACT_HREF}>Contacto</Link>
+        <Link href={CONTACT_HREF}>
+          <a>Contacto</a>
+        </Link>
       </li>
     </Ul>
   )
