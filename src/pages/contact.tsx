@@ -12,9 +12,13 @@ import {
   Social,
   ContainerContact
 } from '../components/Contact/styles'
+import { GithubUser } from '../interfaces/GithubUser'
 
 const Contact = () => {
-  const { data: ghUser } = useSWR('ghUser', GithubService.getGithubAvatar)
+  const { data: ghUser } = useSWR<GithubUser>(
+    'ghUser',
+    GithubService.getGithubAvatar
+  )
 
   return (
     <ContainerContact>
