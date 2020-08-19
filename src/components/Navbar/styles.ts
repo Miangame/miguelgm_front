@@ -28,6 +28,7 @@ export const Ul = styled.ul`
     padding: 18px 16px;
     display: flex;
     align-items: center;
+    transition: all 0.4s ease;
   }
 
   li a {
