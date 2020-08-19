@@ -25,11 +25,23 @@ export const Ul = styled.ul`
 
   li {
     padding: 18px 16px;
+    display: flex;
+    align-items: center;
   }
 
   li a {
     color: ${colors.black};
     text-decoration: none;
+  }
+
+  li:hover {
+    /* background: #e4ebea; */
+    background: ${colors.secondary};
+    border-radius: 5px;
+  }
+
+  li:hover a {
+    color: white;
   }
 
   ${(props: NavigationMenu) => {
@@ -56,6 +68,9 @@ export const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
     li a{
       color: ${colors.white};
+    }
+    li:hover {
+      background: none;
     }
   `}
 `
