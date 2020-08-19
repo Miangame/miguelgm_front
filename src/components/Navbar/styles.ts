@@ -6,11 +6,11 @@ import { colors } from '../../theme/color'
 
 export const Nav = styled.nav`
   width: 100%;
-  height: 55px;
+  height: 25px;
   border-bottom: 2px solid #f1f1f1;
-  padding: 0 20px;
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 
   ${media.greaterThan('md')`
     border-bottom: none;
@@ -22,6 +22,7 @@ export const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   margin-top: 0;
+  padding-left: 0;
 
   li {
     padding: 18px 16px;
@@ -35,7 +36,6 @@ export const Ul = styled.ul`
   }
 
   li:hover {
-    /* background: #e4ebea; */
     background: ${colors.secondary};
     border-radius: 5px;
   }
