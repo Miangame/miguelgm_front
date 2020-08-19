@@ -7,6 +7,7 @@ const Head = () => (
   <>
     <HeadLinks />
     <HeadScripts />
+    <title>Miguel A. Gavilán 👨🏽‍💻 | Web developer</title>
   </>
 )
 
