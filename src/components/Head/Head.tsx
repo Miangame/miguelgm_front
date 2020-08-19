@@ -9,7 +9,6 @@ const Head = () => (
     <HeadDefaultMetatags />
     <HeadLinks />
     <HeadScripts />
-    <title>👨🏽‍💻 Miguel A. Gavilán | Web developer</title>
   </>
 )
 
