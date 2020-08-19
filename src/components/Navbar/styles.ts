@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import { media } from '../../theme/media'
 import { NavigationMenu } from '../../interfaces/navigationMenu'
+import { colors } from '../../theme/color'
 
 export const Nav = styled.nav`
   width: 100%;
@@ -26,6 +27,11 @@ export const Ul = styled.ul`
     padding: 18px 16px;
   }
 
+  li a {
+    color: ${colors.black};
+    text-decoration: none;
+  }
+
   ${(props: NavigationMenu) => {
     if (props.open) {
       return media.lessThan('md')`
@@ -40,7 +46,7 @@ export const Ul = styled.ul`
 
   ${media.lessThan('md')`
     flex-flow: column nowrap;
-    background-color: #0d2538;
+    background-color: ${colors.secondary};
     position: fixed;
     top: 0;
     right: 0;
@@ -48,8 +54,8 @@ export const Ul = styled.ul`
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-    li {
-      color: #fff;
+    li a{
+      color: ${colors.white};
     }
   `}
 `
