@@ -22,7 +22,7 @@ export const Name = styled.p`
 export const Description = styled.p`
   font-size: 18px;
   font-weight: 600;
-  color: ${colors.primary};
+  color: ${colors.secondary};
 `
 
 export const Social = styled.div`
