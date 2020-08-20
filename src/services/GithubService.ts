@@ -1,4 +1,4 @@
-import { GithubUser } from '../interfaces/githubUser'
+import { GithubUser } from '../interfaces/GithubUser'
 
 import ApiClient from './ApiClient'
 

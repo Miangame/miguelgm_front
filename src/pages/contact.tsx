@@ -12,7 +12,7 @@ import {
   Social,
   ContainerContact
 } from '../components/Contact/styles'
-import { GithubUser } from '../interfaces/githubUser'
+import { GithubUser } from '../interfaces/GithubUser'
 
 const Contact = () => {
   const { data: ghUser } = useSWR<GithubUser>(
