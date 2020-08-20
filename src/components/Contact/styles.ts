@@ -7,6 +7,7 @@ export const ContainerContact = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin-top: 40%;
 
   ${media.greaterThan('md')`
     margin-top: 15%;

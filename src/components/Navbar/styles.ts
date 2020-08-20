@@ -31,18 +31,18 @@ export const Ul = styled.ul`
     transition: all 0.4s ease;
   }
 
+  li.active {
+    background: ${colors.secondary};
+    border-radius: 5px;
+
+    & > a {
+      color: white;
+    }
+  }
+
   li a {
     color: ${colors.black};
     text-decoration: none;
-  }
-
-  li:hover {
-    background: ${colors.secondary};
-    border-radius: 5px;
-  }
-
-  li:hover a {
-    color: white;
   }
 
   ${(props: NavigationMenu) => {

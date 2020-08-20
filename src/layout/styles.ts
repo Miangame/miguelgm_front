@@ -16,7 +16,7 @@ export const LayoutContainer = styled.main`
 export const LayoutChildrenContainer = styled.div`
   height: 100%;
   /* position: relative; */
-  padding-top: 50%;
+  padding-top: ${doublePx()};
   width: 100%;
   display: flex;
   flex-flow: column;
