@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React from 'react'
 import { FaRegComment } from 'react-icons/fa'
 import { BsHeart } from 'react-icons/bs'
@@ -5,20 +6,22 @@ import { useRouter } from 'next/router'
 
 import DevtoService from '../../services/DevtoService'
 import { useSWR } from '../../hooks/useSWR'
-import { DevtoArticle } from '../../interfaces/devto'
+import { DevtoPublishedArticle } from '../../interfaces/devto'
 import {
   Card,
   CardTitle,
   CardTag,
   CardReactions,
   CardAuthor,
-  CardTags
+  CardTags,
+  CardAuthorImage,
+  CardAuthorName
 } from '../../components/Posts/styles'
 
 const posts = () => {
   const router = useRouter()
 
-  const { data: articles } = useSWR<DevtoArticle[]>(
+  const { data: articles } = useSWR<DevtoPublishedArticle[]>(
     'articles',
     DevtoService.getDevtoArticles
   )
@@ -33,14 +36,41 @@ const posts = () => {
           }}
         >
           <CardAuthor>
-            <span>{article.user.name}</span>
-            {article.organization && (
-              <>
-                {' '}
-                for
-                <span> {article.organization.name}</span>
-              </>
-            )}
+            <CardAuthorImage>
+              <img
+                src={
+                  article.organization
+                    ? article.organization.profile_image
+                    : article.user?.profile_image
+                }
+                alt={
+                  article.organization
+                    ? article.organization.name
+                    : article.user?.username
+                }
+                className="firstImage"
+              />
+              {article.organization && (
+                <img
+                  src={article.user?.profile_image}
+                  alt={article.user?.name}
+                  className="secondaryImage"
+                />
+              )}
+            </CardAuthorImage>
+            <CardAuthorName>
+              <p>
+                <span>{article.user.name}</span>
+                {article.organization && (
+                  <>
+                    {' '}
+                    for
+                    <span> {article.organization.name}</span>
+                  </>
+                )}
+              </p>
+              <p className="date">{article.readable_publish_date}</p>
+            </CardAuthorName>
           </CardAuthor>
 
           <CardTitle>{article.title}</CardTitle>

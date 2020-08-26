@@ -34,7 +34,7 @@ const RightNav = (props: RightNavProps) => {
           <a>Ponencias</a>
         </Link>
       </li>
-      <li className={route === POSTS_HREF ? 'active' : undefined}>
+      <li className={route.includes(POSTS_HREF) ? 'active' : undefined}>
         <Link href={POSTS_HREF}>
           <a>Posts</a>
         </Link>
