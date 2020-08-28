@@ -17,6 +17,11 @@ const Presentations = () => (
         <CardPresentationDetails>
           <h2>{presentation.title}</h2>
           <p>{presentation.description}</p>
+          {presentation.code && (
+            <a href={presentation.code} target="_blank" rel="noreferrer">
+              Código
+            </a>
+          )}
         </CardPresentationDetails>
       </CardPresentation>
     ))}
