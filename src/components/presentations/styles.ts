@@ -23,4 +23,8 @@ export const CardPresentationImage = styled.div`
   }
 `
 
-export const CardPresentationDetails = styled.div``
+export const CardPresentationDetails = styled.div`
+  a {
+    margin-right: 8px;
+  }
+`

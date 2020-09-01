@@ -6,9 +6,8 @@ import {
   HOME_HREF,
   PRESENTATIONS_HREF,
   POSTS_HREF,
-  EDUCATION_HREF,
-  CONTACT_HREF,
-  WORK_EXPERIENCE_HREF
+  ABOUT_ME,
+  CONTACT_HREF
 } from '../../constants/routesHref'
 
 import { Ul } from './styles'
@@ -39,14 +38,9 @@ const RightNav = (props: RightNavProps) => {
           <a>Posts</a>
         </Link>
       </li>
-      <li className={route === EDUCATION_HREF ? 'active' : undefined}>
-        <Link href={EDUCATION_HREF}>
-          <a>Formación</a>
-        </Link>
-      </li>
-      <li className={route === WORK_EXPERIENCE_HREF ? 'active' : undefined}>
-        <Link href={WORK_EXPERIENCE_HREF}>
-          <a>Experiencia laboral</a>
+      <li className={route === ABOUT_ME ? 'active' : undefined}>
+        <Link href={ABOUT_ME}>
+          <a>Sobre mi</a>
         </Link>
       </li>
       <li className={route === CONTACT_HREF ? 'active' : undefined}>

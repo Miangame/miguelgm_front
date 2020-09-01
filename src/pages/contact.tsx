@@ -3,8 +3,6 @@ import React from 'react'
 import { FaTwitter, FaLinkedin, FaDev, FaGithub } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 
-import { useSWR } from '../hooks/useSWR'
-import GithubService from '../services/GithubService'
 import { Avatar } from '../components/Contact/Avatar'
 import {
   Name,
@@ -12,17 +10,11 @@ import {
   Social,
   ContainerContact
 } from '../components/Contact/styles'
-import { GithubUser } from '../interfaces/GithubUser'
 
 const Contact = () => {
-  const { data: ghUser } = useSWR<GithubUser>(
-    'ghUser',
-    GithubService.getGithubAvatar
-  )
-
   return (
     <ContainerContact>
-      <Avatar src={ghUser?.avatar_url} />
+      <Avatar src="img/profile.jpg" />
       <Name>Miguel Ángel Gavilán Merino</Name>
       <Description>Web Developer</Description>
       <Social>

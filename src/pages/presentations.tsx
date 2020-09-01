@@ -22,6 +22,9 @@ const Presentations = () => (
               Código
             </a>
           )}
+          <a href={presentation.schedule} target="_blank" rel="noreferrer">
+            Programa
+          </a>
         </CardPresentationDetails>
       </CardPresentation>
     ))}
