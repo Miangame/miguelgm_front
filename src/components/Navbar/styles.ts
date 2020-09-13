@@ -35,7 +35,7 @@ export const Ul = styled.ul`
     background: ${colors.secondary};
     border-radius: 5px;
 
-    & > a {
+    & > a {
       color: white;
     }
   }
