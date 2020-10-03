@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "eslint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "dependencies": {
     "@types/node": "^13.9.2",
