@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "make-badges": "istanbul-badges-readme",
+    "lighthouse-badges": "lighthouse-badges --urls https://miguelgm.es/ https://miguelgm.es/presentations https://miguelgm.es/posts https://miguelgm.es/aboutMe  https://miguelgm.es/contact"
   },
   "dependencies": {
     "@types/node": "^13.9.2",
@@ -16,6 +18,7 @@
     "framer-motion": "^2.5.1",
     "i18next": "^19.5.3",
     "i18next-browser-languagedetector": "^5.0.0",
+    "lighthouse-badges": "^1.0.35",
     "next": "^9.5.2",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
