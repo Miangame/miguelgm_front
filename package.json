@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "eslint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "lighthouse-badges": "lighthouse-badges --urls https://miguelgm.es/ https://miguelgm.es/presentations https://miguelgm.es/posts https://miguelgm.es/aboutMe  https://miguelgm.es/contact"
   },
   "dependencies": {
