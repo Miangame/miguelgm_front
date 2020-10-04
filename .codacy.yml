@@ -1,0 +1,19 @@
+---
+  engines:
+    metric:
+      exclude_paths:
+        - 'public/manifest.json'
+        - 'public/*.js'
+        - 'public/*.js.map'
+        - '.github/**/*.md'
+        - '.github/*.md'
+        - '*.md'
+
+  exclude_paths:
+    - 'public/manifest.json'
+    - 'public/*.js'
+    - 'public/*.js.map'
+    - 'tsconfig.json'
+    - '.github/**/*.md'
+    - '.github/*.md'
+    - '*.md'
