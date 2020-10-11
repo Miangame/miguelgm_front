@@ -19,7 +19,7 @@
     "i18next": "^19.5.3",
     "i18next-browser-languagedetector": "^5.0.0",
     "lighthouse-badges": "^1.0.35",
-    "next": "^9.5.2",
+    "next": "^9.5.4",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
