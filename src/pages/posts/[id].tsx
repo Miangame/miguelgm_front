@@ -35,6 +35,9 @@ const PostPage = () => {
           <p>{article?.organization.name}</p>
         </PostOrganization>
       )}
+      <a href={article?.url} target="_blank" rel="noreferrer">
+        Ver post original
+      </a>
       <PostTitle>{article?.title}</PostTitle>
       <PostTags>
         {article?.tags.map((tag, index) => (

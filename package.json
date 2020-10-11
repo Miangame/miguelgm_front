@@ -10,8 +10,6 @@
     "lighthouse-badges": "lighthouse-badges --urls https://miguelgm.es/ https://miguelgm.es/presentations https://miguelgm.es/posts https://miguelgm.es/aboutMe  https://miguelgm.es/contact"
   },
   "dependencies": {
-    "@types/node": "^13.9.2",
-    "@types/react": "^16.9.25",
     "babel-loader": "^8.1.0",
     "babel-plugin-import": "^1.13.0",
     "babel-plugin-styled-components": "^1.11.1",
