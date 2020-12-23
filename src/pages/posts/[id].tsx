@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 import React from 'react'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 import DevtoService from '../../services/DevtoService'
 import { useSWR } from '../../hooks/useSWR'
@@ -28,9 +29,11 @@ const PostPage = () => {
     <PostContainer>
       {article?.organization && (
         <PostOrganization>
-          <img
+          <Image
             src={article?.organization.profile_image}
             alt={article?.organization.name}
+            width={32}
+            height={32}
           />
           <p>{article?.organization.name}</p>
         </PostOrganization>
@@ -45,7 +48,12 @@ const PostPage = () => {
         ))}
       </PostTags>
       <PostAuthor>
-        <img src={article?.user.profile_image} alt={article?.user.name} />
+        <Image
+          src={article?.user.profile_image}
+          alt={article?.user.name}
+          width={32}
+          height={32}
+        />
         <p>
           {article?.user.name}{' '}
           <span className="date">· {article?.readable_publish_date}</span>

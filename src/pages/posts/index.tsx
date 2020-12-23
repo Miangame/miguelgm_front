@@ -3,6 +3,7 @@ import React from 'react'
 import { FaRegComment } from 'react-icons/fa'
 import { BsHeart } from 'react-icons/bs'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 import DevtoService from '../../services/DevtoService'
 import { useSWR } from '../../hooks/useSWR'
@@ -37,7 +38,7 @@ const posts = () => {
         >
           <CardAuthor>
             <CardAuthorImage>
-              <img
+              <Image
                 src={
                   article.organization
                     ? article.organization.profile_image
@@ -48,12 +49,16 @@ const posts = () => {
                     ? article.organization.name
                     : article.user?.username
                 }
+                width={30}
+                height={30}
                 className="firstImage"
               />
               {article.organization && (
-                <img
+                <Image
                   src={article.user?.profile_image}
                   alt={article.user?.name}
+                  width={20}
+                  height={20}
                   className="secondaryImage"
                 />
               )}

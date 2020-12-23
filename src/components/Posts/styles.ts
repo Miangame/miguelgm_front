@@ -59,9 +59,6 @@ export const CardAuthorImage = styled.div`
 
   .secondaryImage {
     width: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 13px;
   }
 `
 
@@ -112,10 +109,13 @@ export const PostOrganization = styled.div`
   align-items: center;
 
   img {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
+    width: 32px !important;
+    height: 32px !important;
     border-radius: 50%;
+  }
+
+  p {
+    margin-left: 10px;
   }
 `
 
@@ -135,8 +135,11 @@ export const PostAuthor = styled.div`
   img {
     width: 32px;
     height: 32px;
-    margin-right: 10px;
     border-radius: 50%;
+  }
+
+  p {
+    margin-left: 10px;
   }
 
   .date {
@@ -208,6 +211,23 @@ export const PostBody = styled.div`
 
     .c1 {
       color: #808080;
+    }
+
+    .highlight__panel {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      visibility: hidden;
+    }
+
+    .highlight__panel-action {
+      display: flex;
+      padding: var(--su-2);
+      overflow: hidden;
+      background: var(--base-60);
+      border-bottom-left-radius: var(--radius);
+      opacity: 0.9;
     }
   }
 `

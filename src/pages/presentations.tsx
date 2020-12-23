@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 import {
   CardPresentationImage,
@@ -12,7 +13,12 @@ const Presentations = () => (
     {presentations.map((presentation, index) => (
       <CardPresentation key={index}>
         <CardPresentationImage>
-          <img src={presentation.image} />
+          <Image
+            src={`/${presentation.image}`}
+            alt={presentation.title}
+            width={200}
+            height={200}
+          />
         </CardPresentationImage>
         <CardPresentationDetails>
           <h2>{presentation.title}</h2>
