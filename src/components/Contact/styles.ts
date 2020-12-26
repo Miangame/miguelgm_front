@@ -1,17 +1,12 @@
 import styled from 'styled-components'
 
 import { colors } from '../../theme/color'
-import { media } from '../../theme/media'
 
 export const ContainerContact = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin-top: 40%;
-
-  ${media.greaterThan('md')`
-    margin-top: 15%;
-  `}
+  margin-top: 15%;
 `
 
 export const Name = styled.p`

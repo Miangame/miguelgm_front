@@ -23,6 +23,7 @@ export const Ul = styled.ul`
   flex-flow: row nowrap;
   margin-top: 0;
   padding-left: 0;
+  z-index: 1;
 
   li {
     padding: 18px 16px;
