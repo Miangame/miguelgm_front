@@ -32,10 +32,12 @@ const Index = () => (
       </DescriptionHome>
     </DescriptionHomeContainer>
     <QuoteHome>
-      <i className="fas fa-quote-left quote-icon"></i>
+      <span className="icon-container">
+        <i className="fas fa-quote-left"></i>
+      </span>
       El trabajo ocupará una gran parte de tu vida, la mejor forma de lidiar con
       ello, es encontrar algo que realmente ames.
-      <span>Steve Jobs</span>
+      <span className="author">Steve Jobs</span>
     </QuoteHome>
   </HomeContainer>
 )

@@ -79,9 +79,12 @@ export const QuoteHome = styled.blockquote`
   position: relative;
   background: #ededed;
 
-  .quote-icon {
-    color: ${colors.secondary};
+  .icon-container {
     font-size: 1.5em;
+  }
+
+  svg {
+    color: ${colors.secondary};
     position: absolute;
     left: 15px;
     top: 0px;
@@ -91,7 +94,7 @@ export const QuoteHome = styled.blockquote`
     content: '';
   }
 
-  span {
+  .author {
     display: block;
     color: #333333;
     font-style: normal;
@@ -103,7 +106,7 @@ export const QuoteHome = styled.blockquote`
     font-size: 1.4em;
     margin: ${doublePx()} auto;
 
-    svg {
+    .icon-container {
       font-size: 2em;
     }
   `}
