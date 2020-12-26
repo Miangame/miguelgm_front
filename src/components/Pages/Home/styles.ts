@@ -79,7 +79,7 @@ export const QuoteHome = styled.blockquote`
   position: relative;
   background: #ededed;
 
-  svg {
+  .quote-icon {
     color: ${colors.secondary};
     font-size: 1.5em;
     position: absolute;

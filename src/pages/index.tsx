@@ -32,7 +32,7 @@ const Index = () => (
       </DescriptionHome>
     </DescriptionHomeContainer>
     <QuoteHome>
-      <i className="fas fa-quote-left"></i>
+      <i className="fas fa-quote-left quote-icon"></i>
       El trabajo ocupará una gran parte de tu vida, la mejor forma de lidiar con
       ello, es encontrar algo que realmente ames.
       <span>Steve Jobs</span>
