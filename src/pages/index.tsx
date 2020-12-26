@@ -22,13 +22,11 @@ const Index = () => (
       </HiHome>
       <NameHome>Soy Miguel Ángel.</NameHome>
       <DescriptionHome>
-        <p>
-          Actualmente estoy trabajando como <b>Software Engineer</b> en{' '}
-          <a href="https://wealize.digital/" target="_blank" rel="noreferrer">
-            Wealize
-          </a>
-          .
-        </p>
+        Actualmente estoy trabajando como <b>Software Engineer</b> en{' '}
+        <a href="https://wealize.digital/" target="_blank" rel="noreferrer">
+          Wealize
+        </a>
+        .
       </DescriptionHome>
     </DescriptionHomeContainer>
     <QuoteHome>
