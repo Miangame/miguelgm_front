@@ -1,5 +1,5 @@
 import React from 'react'
-import Document from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 // https://github.com/zeit/next.js/tree/canary/examples/with-styled-components
@@ -29,6 +29,18 @@ class ExtendedDocument extends Document {
     } finally {
       sheet.seal()
     }
+  }
+
+  render () {
+    return (
+      <Html lang="es">
+        <Head />
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
   }
 }
 

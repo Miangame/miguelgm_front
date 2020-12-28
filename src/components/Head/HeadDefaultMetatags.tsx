@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 const HeadDefaultMetatags = () => (
   <Head>
-    <html lang="es" />
+
     <title>👨🏽‍💻 Miguel A. Gavilán | Web developer</title>
     <meta
       name="viewport"
