@@ -4,7 +4,7 @@
 
 ## Lighthouse
 
-![lighthouse_pwa](lighthouse_pwa.svg) ![lighthouse_performance](lighthouse_performance.svg) ![lighthouse_best-practices](lighthouse_best-practices.svg) ![lighthouse_accessibility](lighthouse_accessibility.svg) ![lighthouse_seo](lighthouse_seo.svg)
+![lighthouse_performance](lighthouse_performance.svg) ![lighthouse_best-practices](lighthouse_best-practices.svg) ![lighthouse_accessibility](lighthouse_accessibility.svg) ![lighthouse_seo](lighthouse_seo.svg) ![lighthouse_pwa](lighthouse_pwa.svg)
 
 ## Portfolio
 
