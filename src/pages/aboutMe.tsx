@@ -15,7 +15,7 @@ const AboutMe = () => {
   return (
     <AboutMeContainer>
       <ImageHomeContainer>
-        <ProfileImageHome alt="profile" src="/img/profile.jpg" />
+        <ProfileImageHome alt="profile" src="/img/profile.webp" />
       </ImageHomeContainer>
       <TitleAboutMe>Soy Miguel Ángel Gavilán</TitleAboutMe>
       <SubtitleAboutMe>Software Engineer / Web Developer</SubtitleAboutMe>

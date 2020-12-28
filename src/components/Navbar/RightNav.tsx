@@ -52,4 +52,4 @@ const RightNav = (props: RightNavProps) => {
   )
 }
 
-export default RightNav
+export default React.memo(RightNav)

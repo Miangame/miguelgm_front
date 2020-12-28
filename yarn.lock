@@ -626,6 +626,11 @@ acorn@^7.2.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.3.1.tgz#85010754db53c3fbaf3b9ea3e083aa5c5d147ffd"
   integrity sha512-tLc0wSnatxAQHVHUapaHdz72pi9KUyHjq5KyHjGg9Y8Ifdc79pTh2XvI6I1/chZbnM7QtNKzh66ooDogPZSleA==
 
+add@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
+  integrity sha1-JI8Kn25aUo7yKV2+7DBTITCuIjU=
+
 adjust-sourcemap-loader@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/adjust-sourcemap-loader/-/adjust-sourcemap-loader-3.0.0.tgz#5ae12fb5b7b1c585e80bbb5a63ec163a1a45e61e"
@@ -6825,6 +6830,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typeface-rubik@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-rubik/-/typeface-rubik-1.1.13.tgz#c01d40f05718590bc05d08ea404666a8ef56377a"
+  integrity sha512-mMWgn3bYfT6V4WWA3yvdEM3AkTA7iK1XwhlOX3+vWfqHc6O9I2RUsi9krEXzNdQ1UE/eoEFBRigMtu30PsdEDg==
 
 typescript@^3.9.6:
   version "3.9.6"

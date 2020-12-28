@@ -1,4 +1,5 @@
 import React from 'react'
+import 'typeface-rubik'
 import { AppProps } from 'next/app'
 
 import Head from '../components/Head/Head'

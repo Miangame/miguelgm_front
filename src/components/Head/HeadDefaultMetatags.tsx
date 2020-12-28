@@ -11,4 +11,4 @@ const HeadDefaultMetatags = () => (
   </Head>
 )
 
-export default HeadDefaultMetatags
+export default React.memo(HeadDefaultMetatags)

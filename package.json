@@ -10,6 +10,7 @@
     "lighthouse-badges": "lighthouse-badges --urls https://miguelgm.es/ https://miguelgm.es/presentations https://miguelgm.es/posts https://miguelgm.es/aboutMe  https://miguelgm.es/contact"
   },
   "dependencies": {
+    "add": "^2.0.6",
     "babel-loader": "^8.1.0",
     "babel-plugin-import": "^1.13.0",
     "babel-plugin-styled-components": "^1.11.1",
@@ -26,7 +27,8 @@
     "react-icons": "^3.11.0",
     "styled-components": "^5.1.1",
     "styled-media-query": "^2.1.2",
-    "swr": "^0.3.0"
+    "swr": "^0.3.0",
+    "typeface-rubik": "^1.1.13"
   },
   "devDependencies": {
     "@types/node": "^14.0.14",

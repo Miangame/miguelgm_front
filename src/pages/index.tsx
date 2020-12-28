@@ -14,7 +14,7 @@ import {
 const Index = () => (
   <HomeContainer>
     <ImageHomeContainer>
-      <ProfileImageHome alt="profile" src="/img/profile.jpg" />
+      <ProfileImageHome alt="profile" src="/img/profile.webp" />
     </ImageHomeContainer>
     <DescriptionHomeContainer>
       <HiHome>
