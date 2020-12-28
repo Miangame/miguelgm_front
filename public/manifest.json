@@ -1,11 +1,9 @@
 {
   "short_name": "miguelgm",
   "name": "Miguel A. Gavilán | Software Engineer | Web Developer",
-  "lang": "es",
   "start_url": "/",
   "background_color": "#ffffff",
   "theme_color": "#1c5480",
-  "dir": "ltr",
   "display": "fullscreen",
   "orientation": "portrait",
   "icons": [
