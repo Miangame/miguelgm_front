@@ -16,7 +16,7 @@ const Contact = () => {
     <ContainerContact>
       <Avatar src="img/avatar.jpeg" />
       <Name>Miguel Ángel Gavilán Merino</Name>
-      <Description>Web Developer</Description>
+      <Description>Software Engineer | Web Developer</Description>
       <Social>
         <a
           href="https://twitter.com/miguel5gavilan"
