@@ -4,9 +4,9 @@ import { FaRegComment } from 'react-icons/fa'
 import { BsHeart } from 'react-icons/bs'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
+import { GetStaticProps } from 'next'
 
 import DevtoService from '../../services/DevtoService'
-import { useSWR } from '../../hooks/useSWR'
 import { DevtoPublishedArticle } from '../../interfaces/devto'
 import {
   Card,
@@ -19,13 +19,12 @@ import {
   CardAuthorName
 } from '../../components/Posts/styles'
 
-const posts = () => {
-  const router = useRouter()
+type PostsPageProps = {
+  articles: DevtoPublishedArticle[]
+}
 
-  const { data: articles } = useSWR<DevtoPublishedArticle[]>(
-    'articles',
-    DevtoService.getDevtoArticles
-  )
+const Posts = ({ articles }: PostsPageProps) => {
+  const router = useRouter()
 
   return (
     <>
@@ -106,4 +105,14 @@ const posts = () => {
   )
 }
 
-export default posts
+export const getStaticProps: GetStaticProps = async () => {
+  const articles: DevtoPublishedArticle[] = await DevtoService.getDevtoArticles()
+
+  return {
+    props: {
+      articles
+    }
+  }
+}
+
+export default Posts

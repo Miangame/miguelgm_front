@@ -1,3 +1,4 @@
+import { GetStaticProps } from 'next'
 import React from 'react'
 
 import {
@@ -37,5 +38,11 @@ const Index = () => (
     </QuoteHome>
   </HomeContainer>
 )
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {}
+  }
+}
 
 export default Index

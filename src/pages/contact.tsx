@@ -2,6 +2,7 @@
 import React from 'react'
 import { FaTwitter, FaLinkedin, FaDev, FaGithub } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
+import { GetStaticProps } from 'next'
 
 import { Avatar } from '../components/Contact/Avatar'
 import {
@@ -44,6 +45,12 @@ const Contact = () => {
       </Social>
     </ContainerContact>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {}
+  }
 }
 
 export default Contact

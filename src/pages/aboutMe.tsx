@@ -1,3 +1,4 @@
+import { GetStaticProps } from 'next'
 import React from 'react'
 
 import {
@@ -35,6 +36,12 @@ const AboutMe = () => {
       </DescriptionAboutMe>
     </AboutMeContainer>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {}
+  }
 }
 
 export default AboutMe

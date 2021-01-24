@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { GetStaticProps } from 'next'
 
 import {
   CardPresentationImage,
@@ -36,5 +37,11 @@ const Presentations = () => (
     ))}
   </>
 )
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {}
+  }
+}
 
 export default Presentations
