@@ -14,7 +14,7 @@ import {
 const Contact = () => {
   return (
     <ContainerContact>
-      <Avatar src="img/avatar.jpeg" />
+      <Avatar src="img/avatar2.jpeg" />
       <Name>Miguel Ángel Gavilán Merino</Name>
       <Description>Software Engineer | Web Developer</Description>
       <Social>

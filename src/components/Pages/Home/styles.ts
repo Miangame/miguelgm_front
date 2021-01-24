@@ -69,7 +69,7 @@ export const ProfileImageHome = styled.img`
 export const QuoteHome = styled.blockquote`
   font-size: 1.2em;
   width: 60%;
-  margin: ${singlePx()} auto;
+  margin: ${singlePx()} 0;
   font-family: Open Sans;
   font-style: italic;
   color: #555555;
@@ -101,7 +101,7 @@ export const QuoteHome = styled.blockquote`
 
   ${media.greaterThan('md')`
     font-size: 1.4em;
-    margin: ${doublePx()} auto;
+    margin: ${doublePx()} 0;
 
     .fa-quote-left {
       font-size: 2em;
@@ -109,6 +109,6 @@ export const QuoteHome = styled.blockquote`
   `}
 
   ${media.greaterThan('lg')`
-    margin: ${quadruple()}px auto 0 auto;
+    margin: ${quadruple()}px 0 0 0;
   `}
 `
