@@ -38,11 +38,6 @@ const RightNav = (props: RightNavProps) => {
           <a>Posts</a>
         </Link>
       </li>
-      <li className={route === ABOUT_ME ? 'active' : undefined}>
-        <Link href={ABOUT_ME}>
-          <a>Sobre mi</a>
-        </Link>
-      </li>
       <li className={route === CONTACT_HREF ? 'active' : undefined}>
         <Link href={CONTACT_HREF}>
           <a>Contacto</a>

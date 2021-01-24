@@ -36,6 +36,7 @@ export const HiHome = styled.p`
 `
 
 export const NameHome = styled.h2`
+  margin-bottom: 0;
   font-size: 1.7em;
 
   ${media.greaterThan('md')`
@@ -43,12 +44,19 @@ export const NameHome = styled.h2`
   `}
 `
 
-export const DescriptionHome = styled.p`
-  font-size: 1.2rem;
+export const SubtitleHome = styled.p`
+  font-weight: 100;
+  color: ${colors.secondary};
+`
 
-  ${media.greaterThan('md')`
-    font-size: 1.4rem;
-  `}
+export const DescriptionHome = styled.div`
+  p {
+    font-size: 1.2rem;
+
+    ${media.greaterThan('md')`
+      font-size: 1.4rem;
+    `}
+  }
 `
 
 export const ImageHomeContainer = styled.div`

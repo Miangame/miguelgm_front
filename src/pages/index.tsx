@@ -9,7 +9,8 @@ import {
   ImageHomeContainer,
   NameHome,
   ProfileImageHome,
-  QuoteHome
+  QuoteHome,
+  SubtitleHome
 } from '../components/Pages/Home/styles'
 
 const Index = () => (
@@ -22,12 +23,27 @@ const Index = () => (
         ¡Hola! <span>👋🏽</span>
       </HiHome>
       <NameHome>Soy Miguel Ángel.</NameHome>
+      <SubtitleHome>Software Engineer / Web Developer</SubtitleHome>
       <DescriptionHome>
-        Actualmente estoy trabajando como <b>Software Engineer</b> en{' '}
-        <a href="https://wealize.digital/" target="_blank" rel="noreferrer">
-          Wealize
-        </a>
-        .
+        <p>
+          Actualmente estoy trabajando como <b>Software Engineer</b> en{' '}
+          <a href="https://wealize.digital/" target="_blank" rel="noreferrer">
+            Wealize
+          </a>
+          .
+        </p>
+        <p>
+          Me considero una persona trabajadora e inconformista, nunca considero
+          que algo está lo suficientemente bien. Soy bastante metódico y
+          constante para poder alcanzar mis metas, además me gustan los{' '}
+          <b>retos constantes</b>, no quiero aburrirme 😄.
+        </p>
+        <p>
+          Por otro lado, me encanta el deporte. He probado muchos, pero el que
+          me atrapó fue el <b>TAEKWONDO</b> 🥋, tanto que lo he practicado
+          durante casi 20 años consiguiendo el cinturón negro <b>1er DAN</b> en
+          el año 2012.
+        </p>
       </DescriptionHome>
     </DescriptionHomeContainer>
     <QuoteHome>
