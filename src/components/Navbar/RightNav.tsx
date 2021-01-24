@@ -2,13 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import {
-  HOME_HREF,
-  PRESENTATIONS_HREF,
-  POSTS_HREF,
-  ABOUT_ME,
-  CONTACT_HREF
-} from '../../constants/routesHref'
+import { HREFS } from '../../constants/routesHref'
 
 import { Ul } from './styles'
 
@@ -23,26 +17,13 @@ const RightNav = (props: RightNavProps) => {
 
   return (
     <Ul open={open}>
-      <li className={route === HOME_HREF ? 'active' : undefined}>
-        <Link href={HOME_HREF}>
-          <a>Inicio</a>
-        </Link>
-      </li>
-      <li className={route === PRESENTATIONS_HREF ? 'active' : undefined}>
-        <Link href={PRESENTATIONS_HREF}>
-          <a>Ponencias</a>
-        </Link>
-      </li>
-      <li className={route.includes(POSTS_HREF) ? 'active' : undefined}>
-        <Link href={POSTS_HREF}>
-          <a>Posts</a>
-        </Link>
-      </li>
-      <li className={route === CONTACT_HREF ? 'active' : undefined}>
-        <Link href={CONTACT_HREF}>
-          <a>Contacto</a>
-        </Link>
-      </li>
+      {HREFS.map((href, index) => (
+        <li key={index} className={route === href.href ? 'active' : undefined}>
+          <Link href={href.href}>
+            <a>{href.desc}</a>
+          </Link>
+        </li>
+      ))}
     </Ul>
   )
 }

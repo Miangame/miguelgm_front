@@ -51,15 +51,15 @@ export const SubtitleHome = styled.p`
 
 export const DescriptionHome = styled.div`
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     ${media.greaterThan('md')`
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     `}
   }
 `
 
-export const ImageHomeContainer = styled.div`
+export const ImageHomeContainer = styled.picture`
   width: 100%;
   text-align: center;
 `
