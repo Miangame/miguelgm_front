@@ -92,12 +92,12 @@ export const AboutMe = styled.section`
 
 export const QuoteHome = styled.blockquote`
   font-size: 1.2em;
-  width: 60%;
+  width: 80%;
   margin: ${singlePx()} 0;
   font-family: Open Sans;
   font-style: italic;
   color: #555555;
-  padding: 1.2em 30px 1.2em 75px;
+  padding: 1.2em 30px 1.2em 35px;
   border-left: 8px solid ${colors.secondary};
   line-height: 1.6;
   position: relative;

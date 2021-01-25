@@ -33,7 +33,7 @@ export const skillGroups = [
     ]
   },
   {
-    title: '⚙️ Devops',
+    title: '⚙️ DevOps',
     skills: [
       'CI/CD',
       'Git',
