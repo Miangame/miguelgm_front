@@ -92,7 +92,7 @@ export const AboutMe = styled.section`
 
 export const QuoteHome = styled.blockquote`
   font-size: 1.2em;
-  width: 100%;
+  width: 60%;
   margin: ${singlePx()} 0;
   font-family: Open Sans;
   font-style: italic;
