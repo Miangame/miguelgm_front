@@ -44,6 +44,10 @@ export const NameHome = styled.h2`
   `}
 `
 
+export const TitleHome = styled.h3`
+  font-size: 1.5em;
+`
+
 export const SubtitleHome = styled.p`
   font-weight: 100;
   color: ${colors.secondary};
@@ -74,9 +78,21 @@ export const ProfileImageHome = styled.img`
   `}
 `
 
+export const AboutMe = styled.section`
+  display: block;
+
+  ${media.greaterThan('lg')`
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 90vw;
+    max-width: 90vw;
+    margin-left: calc(50% - 45vw);
+  `}
+`
+
 export const QuoteHome = styled.blockquote`
   font-size: 1.2em;
-  width: 60%;
+  width: 100%;
   margin: ${singlePx()} 0;
   font-family: Open Sans;
   font-style: italic;

@@ -1,7 +1,9 @@
 import { GetStaticProps } from 'next'
 import React from 'react'
 
+import Experience from '../components/Experience'
 import {
+  AboutMe,
   DescriptionHome,
   DescriptionHomeContainer,
   HiHome,
@@ -10,8 +12,10 @@ import {
   NameHome,
   ProfileImageHome,
   QuoteHome,
-  SubtitleHome
+  SubtitleHome,
+  TitleHome
 } from '../components/Pages/Home/styles'
+import Skills from '../components/Skills'
 
 const Index = () => (
   <HomeContainer>
@@ -46,10 +50,30 @@ const Index = () => (
         </p>
       </DescriptionHome>
     </DescriptionHomeContainer>
+    <AboutMe>
+      <div>
+        <TitleHome>Mi experiencia</TitleHome>
+        <a
+          download="cv-miguel-gavilan-merino.pdf"
+          target="_blank"
+          href="../cv-miguel-gavilan-merino.pdf"
+        >
+          Descarga mi CV actualizado
+        </a>
+        <Experience />
+      </div>
+      <div>
+        <TitleHome>Mis habilidades</TitleHome>
+        <Skills />
+      </div>
+    </AboutMe>
     <QuoteHome>
       {/* <i className="fas fa-quote-left quote-icon"></i> */}
-      El trabajo ocupará una gran parte de tu vida, la mejor forma de lidiar con
-      ello, es encontrar algo que realmente ames.
+      Your work is going to fill a large part of your life, and the only way to
+      be truly satisfied is to do what you believe is great work. And the only
+      way to do great work is to love what you do. If you haven&apos;t found it
+      yet, keep looking. Don&apos;t settle. As with all matters of the heart,
+      you&apos;ll know when you find it.
       <span>Steve Jobs</span>
     </QuoteHome>
   </HomeContainer>

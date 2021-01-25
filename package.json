@@ -26,6 +26,7 @@
     "react-event-timeline": "^1.6.3",
     "react-i18next": "^11.7.0",
     "react-icons": "^3.11.0",
+    "react-vertical-timeline-component": "^3.3.1",
     "styled-components": "^5.1.1",
     "styled-media-query": "^2.1.2",
     "swr": "^0.3.0",
