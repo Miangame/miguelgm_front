@@ -98,6 +98,7 @@ const Posts = ({ articles }: PostsPageProps) => {
                 <span>{article.public_reactions_count} reacciones</span>
               </>
             )}
+            <a href={article.url} target="_blank" rel="noreferrer">Ver post original</a>
           </CardReactions>
         </Card>
       ))}

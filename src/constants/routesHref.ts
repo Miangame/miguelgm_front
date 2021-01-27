@@ -6,6 +6,6 @@ export const CONTACT_HREF: string = '/contact'
 export const HREFS = [
   { href: HOME_HREF, desc: 'Inicio' },
   { href: PRESENTATIONS_HREF, desc: 'Ponencias' },
-  { href: POSTS_HREF, desc: 'Posts' },
+  { href: POSTS_HREF, desc: 'Dev.to posts' },
   { href: CONTACT_HREF, desc: 'Contacto' }
 ]
