@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { triplePx, doublePx } from '../theme/space'
+import { triplePx, doublePx, quadruplePx } from '../theme/space'
 import { media } from '../theme/media'
 
 export const LayoutContainer = styled.main`
@@ -11,6 +11,7 @@ export const LayoutContainer = styled.main`
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding-bottom: ${quadruplePx()};
 `
 
 export const LayoutChildrenContainer = styled.div`

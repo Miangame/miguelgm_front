@@ -5,7 +5,7 @@ import { ServerStyleSheet } from 'styled-components'
 // https://github.com/zeit/next.js/tree/canary/examples/with-styled-components
 
 class ExtendedDocument extends Document {
-  public static async getInitialProps (ctx) {
+  public static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
 
@@ -31,10 +31,46 @@ class ExtendedDocument extends Document {
     }
   }
 
-  render () {
+  render() {
     return (
       <Html lang="es">
-        <Head />
+        <Head>
+          <link
+            rel="preload"
+            href="/fonts/charter/charter_regular-webfont.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/charter/charter_italic-webfont.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/charter/charter_bold-webfont.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/charter/charter_bold_italic-webfont.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/montserrat/montserrat-900-l.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />

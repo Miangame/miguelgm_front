@@ -50,6 +50,6 @@ export const skillGroups = [
   },
   {
     title: '☑️ Testing',
-    skills: ['Unit test', 'Jest', 'Cypress', 'CI', 'CD']
+    skills: ['Unit test', 'Testing library', 'Jest', 'Cypress', 'CI', 'CD']
   }
 ]
