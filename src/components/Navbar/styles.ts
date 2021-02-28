@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 import { media } from '../../theme/media'
 import { NavigationMenu } from '../../interfaces/navigationMenu'
-import { colors } from '../../theme/color'
 
 export const Nav = styled.nav`
   width: 100%;
@@ -36,7 +35,7 @@ export const Ul = styled.ul`
     border-radius: 5px;
 
     & > a {
-      color: white;
+      color: ${({ theme }) => theme.colors.navigation};
     }
   }
 
@@ -68,7 +67,7 @@ export const Ul = styled.ul`
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     li a{
-      color: ${colors.white};
+      color: ${({ theme }) => theme.colors.navigation};
     }
     li:hover {
       background: none;
@@ -94,8 +93,8 @@ export const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${(props: NavigationMenu) =>
-      props.open ? '#ccc' : '#333'};
+    background-color: ${({ theme, open }) =>
+      open ? theme.colors.menuButtonOpened : theme.colors.menuButtonClosed};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;

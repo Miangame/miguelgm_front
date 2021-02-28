@@ -7,7 +7,10 @@ export const lightTheme: DefaultTheme = {
   text: colors.black,
   colors: {
     main: colors.primary,
-    black: colors.black
+    black: colors.black,
+    menuButtonClosed: colors.menuButtonClosed,
+    menuButtonOpened: colors.menuButtonOpened,
+    navigation: colors.white
   }
 }
 
@@ -16,6 +19,9 @@ export const darkTheme: DefaultTheme = {
   text: colors.darkText,
   colors: {
     main: colors.primaryDark,
-    black: colors.black
+    black: colors.black,
+    menuButtonClosed: colors.menuButtonOpened,
+    menuButtonOpened: colors.menuButtonClosed,
+    navigation: colors.black
   }
 }

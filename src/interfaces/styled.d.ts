@@ -10,6 +10,9 @@ declare module 'styled-components' {
     colors: {
       main: string
       black: string
+      menuButtonClosed: string
+      menuButtonOpened: string
+      navigation: string
     }
   }
 }

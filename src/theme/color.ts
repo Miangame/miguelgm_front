@@ -12,5 +12,7 @@ export const colors = {
   eurotransPrimary: '#3DBCD8',
   sopinetPrimary: '#9DAD53',
   sopinetBackground: '#f6fdd6',
-  skillsBackground: '#d0d3d6'
+  skillsBackground: '#d0d3d6',
+  menuButtonClosed: '#333',
+  menuButtonOpened: '#ccc'
 }
