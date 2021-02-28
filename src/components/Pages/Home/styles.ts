@@ -1,6 +1,5 @@
 import styled, { keyframes } from 'styled-components'
 
-import { colors } from '../../../theme/color'
 import { media } from '../../../theme/media'
 import { doublePx, quadruple, singlePx, triplePx } from '../../../theme/space'
 
@@ -50,7 +49,7 @@ export const TitleHome = styled.h3`
 
 export const SubtitleHome = styled.p`
   font-weight: 100;
-  color: ${colors.secondary};
+  color: ${({ theme }) => theme.colors.main};
 `
 
 export const DescriptionHome = styled.div`
@@ -98,13 +97,13 @@ export const QuoteHome = styled.blockquote`
   font-style: italic;
   color: #555555;
   padding: 1.2em 30px 1.2em 35px;
-  border-left: 8px solid ${colors.secondary};
+  border-left: 8px solid ${({ theme }) => theme.colors.main};
   line-height: 1.6;
   position: relative;
   background: #ededed;
 
   .fa-quote-left {
-    color: ${colors.secondary};
+    color: ${({ theme }) => theme.colors.main};
     font-size: 1.5em;
     position: absolute;
     left: 15px;

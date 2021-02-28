@@ -6,15 +6,15 @@ import { BoxSkills } from './styles'
 
 const Skills = () => (
   <BoxSkills>
-    {skillGroups.map((group) => (
-      <>
+    {skillGroups.map((group, indexGroup) => (
+      <div key={indexGroup}>
         <h3>{group.title}</h3>
         <p>
           {group.skills.map((skill, index) => (
             <span key={index}>{skill}</span>
           ))}
         </p>
-      </>
+      </div>
     ))}
   </BoxSkills>
 )

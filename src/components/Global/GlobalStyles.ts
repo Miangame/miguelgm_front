@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
 
-import { colors } from '../../theme/color'
-
 export const GlobalStyles = createGlobalStyle`
   @font-face {
     font-display: optional;
@@ -46,17 +44,18 @@ export const GlobalStyles = createGlobalStyle`
   /* montserrat */
 
   @font-face {
-    font-display: optional;
-    font-family: 'montserrat';
+    font-family: "montserrat";
     src: local('montserrat'),
-      url(/fonts/montserrat/montserrat-900-l.woff2) format('woff2');
+    url(/fonts/montserrat/Montserrat-Black.ttf);
+    font-style: medium;
     font-weight: 900;
-    font-style: normal;
-    unicode-range: U+000-5FF; /* Latin glyphs */
+    font-display: swap;
   }
 
   body, input, textarea, select, button {
     font-family: 'charter', sans-serif;
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -64,6 +63,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    color: ${colors.secondary};
+    color: ${({ theme }) => theme.colors.main};
   }
 `

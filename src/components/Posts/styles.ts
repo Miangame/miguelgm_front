@@ -31,7 +31,7 @@ export const CardAuthorName = styled.div`
     margin-bottom: 0;
   }
   span {
-    color: ${colors.secondary};
+    color: ${({ theme }) => theme.colors.main};
   }
   .date {
     margin: 0;

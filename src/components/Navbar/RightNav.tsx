@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { HREFS } from '../../constants/routesHref'
+import Toggle from '../Toggle'
 
 import { Ul } from './styles'
 
@@ -24,6 +25,9 @@ const RightNav = (props: RightNavProps) => {
           </Link>
         </li>
       ))}
+      <li>
+        <Toggle />
+      </li>
     </Ul>
   )
 }

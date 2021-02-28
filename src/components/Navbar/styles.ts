@@ -32,7 +32,7 @@ export const Ul = styled.ul`
   }
 
   li.active {
-    background: ${colors.secondary};
+    background: ${({ theme }) => theme.colors.main};
     border-radius: 5px;
 
     & > a {
@@ -41,7 +41,7 @@ export const Ul = styled.ul`
   }
 
   li a {
-    color: ${colors.black};
+    color: ${({ theme }) => theme.text};
     text-decoration: none;
   }
 
@@ -59,7 +59,7 @@ export const Ul = styled.ul`
 
   ${media.lessThan('md')`
     flex-flow: column nowrap;
-    background-color: ${colors.secondary};
+    background-color: ${({ theme }) => theme.colors.main};
     position: fixed;
     top: 0;
     right: 0;

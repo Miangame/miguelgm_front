@@ -13,7 +13,8 @@
     "standard",
     "plugin:jest/recommended",
     "plugin:react/recommended",
-    "plugin:cypress/recommended"
+    "plugin:cypress/recommended",
+    "prettier"
   ],
   "globals": {
     "Atomics": "readonly",
