@@ -33,6 +33,11 @@ export const PostsListContainer = styled.div`
   `}
 `
 
+export const PostsBodyDetails = styled.div`
+  height: 100%;
+  position: relative;
+`
+
 export const PostInformation = styled.div`
   display: flex;
   flex-direction: row;

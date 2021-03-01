@@ -14,14 +14,16 @@ const getCardBody = (presentation: Presentation) => {
     <PresentationBodyDetails>
       <h2>{presentation.title}</h2>
       <p>{presentation.description}</p>
-      {presentation.code && (
-        <a href={presentation.code} target="_blank" rel="noreferrer">
-          Código
+      <p className="bottom">
+        {presentation.code && (
+          <a href={presentation.code} target="_blank" rel="noreferrer">
+            Código
+          </a>
+        )}
+        <a href={presentation.schedule} target="_blank" rel="noreferrer">
+          Programa
         </a>
-      )}
-      <a href={presentation.schedule} target="_blank" rel="noreferrer">
-        Programa
-      </a>
+      </p>
     </PresentationBodyDetails>
   )
 }

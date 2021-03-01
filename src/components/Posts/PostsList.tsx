@@ -15,7 +15,8 @@ import {
   PostAuthorImage,
   PostAuthorName,
   PostInformation,
-  PostsListContainer
+  PostsListContainer,
+  PostsBodyDetails
 } from './styles'
 
 type PostsListProps = {
@@ -23,7 +24,7 @@ type PostsListProps = {
 }
 
 const getCardBody = (post: DevtoPublishedArticle) => (
-  <>
+  <PostsBodyDetails>
     <PostInformation>
       <PostAuthorImage
         src={post.user?.profile_image}
@@ -57,12 +58,12 @@ const getCardBody = (post: DevtoPublishedArticle) => (
         </>
       )}
     </ListPostReactions>
-    <p>
+    <p className="bottom">
       <a href={post.url} target="_blank" rel="noreferrer">
         Ver post original
       </a>
     </p>
-  </>
+  </PostsBodyDetails>
 )
 
 const PostsList = ({ posts }: PostsListProps) => {
