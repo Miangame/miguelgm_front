@@ -3,7 +3,7 @@ import React from 'react'
 import { Presentation } from '../../interfaces/presentation'
 import Card from '../Card'
 
-import { CardPresentationDetails, PresentationsListContainer } from './styles'
+import { PresentationBodyDetails, PresentationsListContainer } from './styles'
 
 type PresentationsListProps = {
   presentations: Presentation[]
@@ -11,7 +11,7 @@ type PresentationsListProps = {
 
 const getCardBody = (presentation: Presentation) => {
   return (
-    <CardPresentationDetails>
+    <PresentationBodyDetails>
       <h2>{presentation.title}</h2>
       <p>{presentation.description}</p>
       {presentation.code && (
@@ -22,7 +22,7 @@ const getCardBody = (presentation: Presentation) => {
       <a href={presentation.schedule} target="_blank" rel="noreferrer">
         Programa
       </a>
-    </CardPresentationDetails>
+    </PresentationBodyDetails>
   )
 }
 
