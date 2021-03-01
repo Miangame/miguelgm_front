@@ -38,7 +38,7 @@ export const HomeContainer = styled.div`
 `
 
 export const DescriptionHomeContainer = styled.div`
-  margin-top: ${triplePx()};
+  margin-top: ${singlePx()};
 `
 
 export const HiHome = styled.p`

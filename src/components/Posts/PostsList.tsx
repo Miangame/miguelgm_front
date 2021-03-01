@@ -48,13 +48,13 @@ const getCardBody = (post: DevtoPublishedArticle) => (
       {post.comments_count > 0 && (
         <>
           <FaRegComment />
-          <span>{post.comments_count} comentarios</span>
+          <span>{post.comments_count} coment.</span>
         </>
       )}
       {post.public_reactions_count > 0 && (
         <>
           <BsHeart />
-          <span>{post.public_reactions_count} reacciones</span>
+          <span>{post.public_reactions_count} reacc.</span>
         </>
       )}
     </ListPostReactions>

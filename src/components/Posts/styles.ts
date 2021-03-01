@@ -45,7 +45,7 @@ export const PostInformation = styled.div`
 
 export const PostAuthorImage = styled.img`
   display: inline-block;
-  width: 30px;
+  width: 43px;
   position: relative;
   border-radius: 50%;
 `

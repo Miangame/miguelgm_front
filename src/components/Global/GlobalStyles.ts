@@ -56,6 +56,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'charter', sans-serif;
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
+    line-height: 1.4em;
   }
 
   h1, h2, h3, h4, h5, h6 {

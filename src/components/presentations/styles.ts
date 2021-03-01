@@ -37,7 +37,7 @@ export const PresentationBodyDetails = styled.div`
   position: relative;
 
   a {
-    margin-right: 8px;
+    margin-right: 15px;
   }
 
   .bottom {
