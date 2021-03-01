@@ -4,8 +4,8 @@ import { GetStaticProps } from 'next'
 
 import DevtoService from '../../services/DevtoService'
 import { DevtoPublishedArticle } from '../../interfaces/devto'
-import PostsList from '../../components/posts/PostsList'
-import { PostListTitle } from '../../components/posts/styles'
+import PostsList from '../../components/Posts/PostsList'
+import { PostListTitle } from '../../components/Posts/styles'
 
 type PostsPageProps = {
   articles: DevtoPublishedArticle[]

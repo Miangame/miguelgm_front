@@ -12,7 +12,7 @@ import {
   PostOrganization,
   PostTags,
   PostTitle
-} from '../../components/posts/styles'
+} from '../../components/Posts/styles'
 
 type PostProps = {
   article: DevtoArticle
