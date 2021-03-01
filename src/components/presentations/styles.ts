@@ -34,14 +34,8 @@ export const PresentationsListContainer = styled.div`
 
 export const PresentationBodyDetails = styled.div`
   height: 100%;
-  position: relative;
 
   a {
     margin-right: 15px;
-  }
-
-  .bottom {
-    position: absolute;
-    bottom: 0;
   }
 `

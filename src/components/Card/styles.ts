@@ -5,6 +5,7 @@ export const CardContainer = styled.div`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 `
 
 export const CardImageContainer = styled.div`
@@ -19,5 +20,4 @@ export const CardImageContainer = styled.div`
 
 export const CardBody = styled.div`
   padding: 15px 25px;
-  height: 100%;
 `
