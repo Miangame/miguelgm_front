@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { triplePx, doublePx, quadruplePx } from '../theme/space'
+import { quadruplePx } from '../theme/space'
 import { media } from '../theme/media'
 
 export const LayoutContainer = styled.main`
@@ -16,16 +16,13 @@ export const LayoutContainer = styled.main`
 
 export const LayoutChildrenContainer = styled.div`
   height: 100%;
-  /* position: relative; */
-  padding-top: ${doublePx()};
   width: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
 
   ${media.greaterThan('md')`
-    padding-top: ${triplePx()};
-    width: 50%;
+    width: 90%;
   `}
 
   ${media.greaterThan('lg')`

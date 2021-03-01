@@ -37,7 +37,7 @@ export const jobs = [
     iconBackground: colors.eurotransBackground,
     iconShadow: colors.eurotransPrimary,
     abilities: [
-      'Diseño y creación de interfaces para nuevas funcionalidades con <b>Symfony+Twig+Bootstrap</b>.',
+      'Diseño y creación de interfaces para nuevas funcionalidades con <b>Symfony + Twig + Bootstrap</b>.',
       'Creación de API Rest con <b>Symfony</b>.',
       'JQuery.',
       'Refactor de código monolítico.',

@@ -46,9 +46,9 @@ export const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: "montserrat";
     src: local('montserrat'),
-    url(/fonts/montserrat/Montserrat-Black.ttf);
+    url(/fonts/montserrat/Montserrat-ExtraBold.ttf);
     font-style: medium;
-    font-weight: 900;
+    font-weight: 800;
     font-display: swap;
   }
 

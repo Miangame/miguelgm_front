@@ -1,3 +1,5 @@
+import { Presentation } from '../interfaces/presentation'
+
 export const presentations = [
   {
     title: 'SYSMANA 2020 - Introducción a Web Components con Next.JS',
@@ -27,7 +29,7 @@ export const presentations = [
     title: 'SYSMANA 2017 - Proyectos con Rapsberry Pi',
     description:
       'Distintos proyectos con una Raspberry Pi, desde la creación de una impresora en línea hasta la creación y montaje de una máquina recreativa.',
-    image: 'img/raspberry.svg',
+    image: 'img/raspberry.jpg',
     schedule: 'https://informatica.iesgrancapitan.org/sysmanas/sysmana-ix/'
   }
-]
+] as Presentation[]

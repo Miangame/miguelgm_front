@@ -1,7 +1,13 @@
 import styled, { keyframes } from 'styled-components'
 
 import { media } from '../../../theme/media'
-import { doublePx, quadruple, singlePx, triplePx } from '../../../theme/space'
+import {
+  doublePx,
+  quadruple,
+  quadruplePx,
+  singlePx,
+  triplePx
+} from '../../../theme/space'
 
 const waveAnimation = keyframes`
    0% { transform: rotate( 0.0deg) }
@@ -15,9 +21,20 @@ const waveAnimation = keyframes`
 `
 
 export const HomeContainer = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-flow: column;
+  padding-top: ${doublePx()};
+
+  ${media.greaterThan('md')`
+    width: 70%;
+    padding-top: ${triplePx()};
+  `}
+
+  ${media.greaterThan('lg')`
+    width: 70%;
+    padding-top: ${quadruplePx()};
+  `}
 `
 
 export const DescriptionHomeContainer = styled.div`

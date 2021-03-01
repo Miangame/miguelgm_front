@@ -68,7 +68,6 @@ const Index = () => (
       </div>
     </AboutMe>
     <QuoteHome>
-      {/* <i className="fas fa-quote-left quote-icon"></i> */}
       Choose a job you love, and you will never have to work a day in your life.
       <span>Confucius</span>
     </QuoteHome>

@@ -1,30 +1,54 @@
 import styled from 'styled-components'
 
-import { doublePx, singlePx } from '../../theme/space'
+import { doublePx, quadruplePx, singlePx } from '../../theme/space'
 import { colors } from '../../theme/color'
 import { media } from '../../theme/media'
 
-export const Card = styled.div`
-  background: #fff;
-  border-radius: 2px;
-  width: 70%;
-  padding: 15px 25px;
-  margin-bottom: ${doublePx()};
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  cursor: pointer;
+export const PostListTitle = styled.h1`
+  margin-bottom: ${singlePx()};
+
+  ${media.greaterThan('md')`
+    margin-bottom: ${doublePx()};
+  `}
+
+  ${media.greaterThan('lg')`
+    display: none;
+  `}
 `
 
-export const CardAuthor = styled.div`
-  margin-top: 0;
+export const PostsListContainer = styled.div`
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: ${singlePx()};
+
+  ${media.greaterThan('md')`
+    grid-template-columns: 1fr 1fr;
+  `}
+
+  ${media.greaterThan('lg')`
+    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: ${quadruplePx()};
+  `}
+`
+
+export const PostInformation = styled.div`
   display: flex;
-  flex-flow: row;
-  align-items: center;
+  flex-direction: row;
 `
 
-export const CardAuthorName = styled.div`
+export const PostAuthorImage = styled.img`
+  display: inline-block;
+  width: 30px;
+  position: relative;
+  border-radius: 50%;
+`
+
+export const PostAuthorName = styled.div`
   font-size: 14px;
   width: 90%;
+  margin-left: 15px;
 
   p {
     margin-top: 0;
@@ -39,47 +63,25 @@ export const CardAuthorName = styled.div`
   }
 `
 
-export const CardAuthorImage = styled.div`
-  width: 10%;
-  display: inline-block;
-  margin-right: 15px;
-  position: relative;
-
-  ${media.greaterThan('md')`
-    margin-right: 5px;
-  `}
-
-  img {
-    border-radius: 50%;
-  }
-
-  .firstImage {
-    width: 30px;
-  }
-
-  .secondaryImage {
-    width: 20px;
-  }
-`
-
-export const CardTitle = styled.p`
+export const ListPostTitle = styled.h2`
   font-size: 24px;
   font-weight: 700;
 `
 
-export const CardTags = styled.div`
+export const ListPostTags = styled.div`
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
 `
 
-export const CardTag = styled.p`
+export const ListPostTag = styled.p`
   color: ${colors.grey};
   margin-right: 10px;
   margin-top: 0;
+  margin-bottom: 0;
 `
 
-export const CardReactions = styled.div`
+export const ListPostReactions = styled.div`
   margin-top: ${singlePx()};
   display: flex;
   flex-flow: row;
