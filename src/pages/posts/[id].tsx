@@ -6,12 +6,12 @@ import { GetStaticProps } from 'next'
 import DevtoService from '../../services/DevtoService'
 import { DevtoArticle, DevtoPublishedArticle } from '../../interfaces/devto'
 import {
-  PostTitle,
-  PostOrganization,
-  PostContainer,
-  PostTags,
   PostAuthor,
-  PostBody
+  PostBody,
+  PostContainer,
+  PostOrganization,
+  PostTags,
+  PostTitle
 } from '../../components/posts/styles'
 
 type PostProps = {
