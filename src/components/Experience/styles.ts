@@ -5,6 +5,7 @@ import {
 } from 'react-vertical-timeline-component'
 
 import { colors } from '../../theme/color'
+import { media } from '../../theme/media'
 
 export const VerticalTimelineCustom = styled(VerticalTimeline)`
   &::before {
@@ -32,10 +33,16 @@ export const VerticalTimelineElementCustom = styled(VerticalTimelineElement)`
 
   .vertical-timeline-element-date {
     margin: 0 10px;
-    color: ${({ theme }) => theme.text};
+    color: ${colors.black};
   }
 
   a {
     color: ${colors.primary};
   }
+
+  ${media.greaterThan('lg')`
+    .vertical-timeline-element-date {
+      color: ${({ theme }) => theme.text};
+    }
+  `}
 `
