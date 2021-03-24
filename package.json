@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "eslint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "jest": "jest --silent",
+    "jest-with-coverage": "jest --coverage",
     "lighthouse-badges": "lighthouse-badges --urls https://miguelgm.dev/ https://miguelgm.dev/presentations https://miguelgm.dev/posts https://miguelgm.dev/aboutMe  https://miguelgm.dev/contact"
   },
   "dependencies": {
@@ -34,6 +36,10 @@
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^13.0.10",
+    "@types/jest": "^26.0.21",
     "@types/node": "^14.0.14",
     "@types/react": "^16.9.41",
     "@types/styled-components": "^5.1.0",
@@ -44,11 +50,13 @@
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^23.11.0",
+    "eslint-plugin-jest": "^24.3.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
     "typescript": "^3.9.6"
   }
 }

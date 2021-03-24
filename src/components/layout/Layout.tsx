@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { LayoutProps } from '../interfaces/layout'
-import Navbar from '../components/Navbar/Navbar'
+import { LayoutProps } from '../../interfaces/layout'
+import Navbar from '../Navbar/Navbar'
 
 import { LayoutContainer, LayoutChildrenContainer } from './styles'
 

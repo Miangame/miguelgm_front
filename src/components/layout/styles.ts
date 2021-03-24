@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import { quadruplePx } from '../theme/space'
-import { media } from '../theme/media'
+import { quadruplePx } from '../../theme/space'
+import { media } from '../../theme/media'
 
 export const LayoutContainer = styled.main`
   width: 100%;
