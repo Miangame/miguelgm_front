@@ -71,6 +71,7 @@ export const SubtitleHome = styled.p`
 
 export const DescriptionHome = styled.div`
   p {
+    line-height: 1.6em;
     font-size: 1rem;
 
     ${media.greaterThan('md')`
