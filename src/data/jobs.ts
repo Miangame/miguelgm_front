@@ -18,12 +18,14 @@ export const jobs = [
       'Creación de interfaces de usuario usando <b>Typescript, Reactjs/Nextjs, Styled components, SWR, SSR</b>.',
       'Utilización de sistemas de diseño como <b>Ant.design</b> o <b>Carbon design system</b>.',
       'Realización de pruebas de control de calidad para descubrir errores y optimizar la usabilidad con <b>Cypress y tests unitarios</b>.',
+      'Generación y envío de tokens en blockchain usando <b>Smart Contracts</b>.',
       'Creación de <b>API REST</b> con <b>Python+Django</b>.',
       'Implementación de sistemas de pago con <b>Stripe</b> y <b>PayPal</b>.',
       'Implementación de CI/CD con <b>GithubActions</b> o <b>CircleCI</b>.',
       'Uso de contenedores con <b>Docker/Docker-compose</b> y despliegue en <b>Heroku</b>.',
       'Control de versiones con <b>Git</b> y <b>Github</b>.',
-      'Clean code'
+      '<b>Clean code</b>',
+      '<b>Clean architecture</b>'
     ]
   },
   {
@@ -37,7 +39,7 @@ export const jobs = [
     iconBackground: colors.eurotransBackground,
     iconShadow: colors.eurotransPrimary,
     abilities: [
-      'Diseño y creación de interfaces para nuevas funcionalidades con <b>Symfony + Twig + Bootstrap</b>.',
+      'Diseño y creación de interfaces para nuevas funcionalidades con <bClean>Symfony + Twig + Bootstrap</bClean>.',
       'Creación de API Rest con <b>Symfony</b>.',
       'JQuery.',
       'Refactor de código monolítico.',
