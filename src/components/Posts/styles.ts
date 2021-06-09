@@ -11,7 +11,7 @@ export const PostListTitle = styled.h1`
     margin-bottom: ${doublePx()};
   `}
 
-  ${media.greaterThan('lg')`
+  ${media.greaterThan('xl')`
     display: none;
   `}
 `
@@ -26,7 +26,7 @@ export const PostsListContainer = styled.div`
     grid-template-columns: 1fr 1fr;
   `}
 
-  ${media.greaterThan('lg')`
+  ${media.greaterThan('xl')`
     width: 70%;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: ${quadruplePx()};

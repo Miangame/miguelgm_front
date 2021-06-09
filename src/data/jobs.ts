@@ -1,15 +1,28 @@
 import EurotransIcon from '../components/icons/EurotransIcon'
+import ProductHackersIcon from '../components/icons/ProductHackersIcon'
 import SopinetIcon from '../components/icons/SopinetIcon'
 import WealizeIcon from '../components/icons/WealizeIcon'
 import { colors } from '../theme/color'
 
 export const jobs = [
   {
+    title: 'Frontend Engineer',
+    dates: '06/2021 - Actualidad',
+    place: 'Product Hackers',
+    url: 'https://producthackers.com//',
+    city: 'Madrid, España (Remoto)',
+    icon: ProductHackersIcon,
+    cardColor: colors.phGradient,
+    iconBackground: colors.phGradient,
+    iconShadow: colors.phSecondary,
+    titleColor: colors.primaryDark
+  },
+  {
     title: 'Software Engineer',
-    dates: '07/2019 - Actualidad',
+    dates: '07/2019 - 06/2021',
     place: 'Wealize',
     url: 'https://wealize.digital/',
-    city: 'Córdoba, España',
+    city: 'Córdoba, España (Remoto)',
     icon: WealizeIcon,
     cardColor: colors.wealizeSecondary,
     iconBackground: colors.wealizeSecondary,

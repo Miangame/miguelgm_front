@@ -14,5 +14,9 @@ export const colors = {
   sopinetBackground: '#f6fdd6',
   skillsBackground: '#d0d3d6',
   menuButtonClosed: '#333',
-  menuButtonOpened: '#ccc'
+  menuButtonOpened: '#ccc',
+  phPrimary: '#E64D2A',
+  phSecondary: '#191CB5',
+  phGradient:
+    'linear-gradient(142deg, rgba(230,77,42,1) 36%, rgba(25,28,181,1) 94%)'
 }
