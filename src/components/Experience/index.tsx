@@ -37,7 +37,7 @@ const Experience = () => {
                 href={job.url}
                 target="_blank"
                 rel="noreferrer"
-                style={{ color: job.titleColor || colors.primary }}
+                style={{ color: colors.primary }}
               >
                 {job.place}
               </a>
