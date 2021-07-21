@@ -1,21 +1,20 @@
 import EurotransIcon from '../components/icons/EurotransIcon'
-import ProductHackersIcon from '../components/icons/ProductHackersIcon'
+import GeniallyIcon from '../components/icons/GeniallyIcon'
 import SopinetIcon from '../components/icons/SopinetIcon'
 import WealizeIcon from '../components/icons/WealizeIcon'
 import { colors } from '../theme/color'
 
 export const jobs = [
   {
-    title: 'Frontend Engineer',
-    dates: '06/2021 - Actualidad',
-    place: 'Product Hackers',
-    url: 'https://producthackers.com//',
-    city: 'Madrid, España (Remoto)',
-    icon: ProductHackersIcon,
-    cardColor: colors.phGradient,
-    iconBackground: colors.phGradient,
-    iconShadow: colors.phSecondary,
-    titleColor: colors.primaryDark
+    title: 'Frontend Developer',
+    dates: '07/2021 - Actualidad',
+    place: 'Genially',
+    url: 'https://www.genial.ly/',
+    city: 'Córdoba, España (Remoto)',
+    icon: GeniallyIcon,
+    cardColor: colors.geniallyGradient,
+    iconBackground: colors.geniallyGradient,
+    iconShadow: colors.geniallyPrimary
   },
   {
     title: 'Software Engineer',

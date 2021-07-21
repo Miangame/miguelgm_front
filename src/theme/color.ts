@@ -18,5 +18,8 @@ export const colors = {
   phPrimary: '#E64D2A',
   phSecondary: '#191CB5',
   phGradient:
-    'linear-gradient(142deg, rgba(230,77,42,1) 36%, rgba(25,28,181,1) 94%)'
+    'linear-gradient(142deg, rgba(230,77,42,1) 36%, rgba(25,28,181,1) 94%)',
+  geniallyPrimary: 'rgba(82,96,255,1)',
+  geniallyGradient:
+    'linear-gradient(142deg, rgba(82,96,255,1) 0%, rgb(112, 206, 117) 25%, rgba(242,192,56,1) 50%, rgba(249,105,215,1) 100%)'
 }
