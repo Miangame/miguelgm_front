@@ -20,7 +20,7 @@ import Skills from '../components/Skills'
 const Index = () => (
   <HomeContainer>
     <ImageHomeContainer>
-      <ProfileImageHome alt="profile" src="/img/profile.webp" />
+      <ProfileImageHome alt="profile" src="/img/profile.webp" loading="lazy" />
     </ImageHomeContainer>
     <DescriptionHomeContainer>
       <HiHome>

@@ -29,6 +29,7 @@ const getCardBody = (post: DevtoPublishedArticle) => (
       <PostAuthorImage
         src={post.user?.profile_image}
         alt={post.user?.username}
+        loading="lazy"
       />
       <PostAuthorName>
         <p>

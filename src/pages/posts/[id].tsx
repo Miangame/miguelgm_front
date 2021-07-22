@@ -27,6 +27,7 @@ const PostPage = ({ article }: PostProps) => (
           alt={article?.organization.name}
           width={32}
           height={32}
+          loading="lazy"
         />
         <p>{article?.organization.name}</p>
       </PostOrganization>
@@ -46,6 +47,7 @@ const PostPage = ({ article }: PostProps) => (
         alt={article?.user.name}
         width={32}
         height={32}
+        loading="lazy"
       />
       <p>
         {article?.user.name}{' '}

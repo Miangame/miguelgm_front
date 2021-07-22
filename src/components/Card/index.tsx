@@ -11,7 +11,7 @@ type CardProps = {
 const Card = ({ image, cardBody, onClick }: CardProps) => (
   <CardContainer onClick={onClick}>
     <CardImageContainer>
-      <img src={image} />
+      <img src={image} loading="lazy" />
     </CardImageContainer>
     <CardBody>{cardBody}</CardBody>
   </CardContainer>
