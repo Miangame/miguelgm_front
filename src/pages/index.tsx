@@ -32,11 +32,11 @@ const Index = () => (
         <p>
           Actualmente estoy trabajando como <b>Frontend Engineer</b> en{' '}
           <a
-            href="https://producthackers.com/"
+            href="https://genial.ly/"
             target="_blank"
             rel="noreferrer"
           >
-            Product Hackers
+            Genially
           </a>
           .
         </p>
