@@ -9,7 +9,7 @@ export const jobs = [
     title: 'Frontend Developer',
     dates: '07/2021 - Actualidad',
     place: 'Genially',
-    url: 'https://www.genial.ly/',
+    url: 'https://genial.ly/',
     city: 'Córdoba, España (Remoto)',
     icon: GeniallyIcon,
     cardColor: colors.geniallyGradient,
