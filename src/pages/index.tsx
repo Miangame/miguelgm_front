@@ -1,6 +1,5 @@
-import { GetStaticProps } from 'next'
 import React from 'react'
-import { useTranslation } from 'next-i18next'
+import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import Experience from '../components/Experience'
@@ -20,8 +19,6 @@ import {
 import Skills from '../components/Skills'
 
 const Index = () => {
-  const { t } = useTranslation('home')
-
   return (
     <HomeContainer>
       <ImageHomeContainer>
@@ -33,7 +30,7 @@ const Index = () => {
       </ImageHomeContainer>
       <DescriptionHomeContainer>
         <HiHome>
-          {t('hi')} <span>👋🏽</span>
+          ¡Hola! <span>👋🏽</span>
         </HiHome>
         <NameHome>Soy Miguel Ángel.</NameHome>
         <SubtitleHome>Software Engineer / Web Developer</SubtitleHome>
