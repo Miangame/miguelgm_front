@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import useDarkMode from 'use-dark-mode'
+import { appWithTranslation } from 'next-i18next'
 
 import Head from '../components/Head/Head'
 import Layout from '../components/Layout'
@@ -34,4 +35,4 @@ const App = (props: AppProps) => {
   )
 }
 
-export default App
+export default appWithTranslation(App)
