@@ -5,8 +5,8 @@ import useDarkMode from 'use-dark-mode'
 import { appWithTranslation } from 'next-i18next'
 
 import Head from '../components/Head/Head'
-import Layout from '../components/Layout'
 import { GlobalStyles } from '../components/Global/GlobalStyles'
+import Layout from '../components/Layout'
 import { darkTheme, lightTheme } from '../theme/theme'
 
 const App = (props: AppProps) => {
