@@ -12,7 +12,7 @@ import {
   PostOrganization,
   PostTags,
   PostTitle
-} from '../../components/Posts/styles'
+} from '../../components/PostsList/styles'
 
 type PostProps = {
   article: DevtoArticle
@@ -59,7 +59,8 @@ const PostPage = ({ article }: PostProps) => (
 )
 
 export const getStaticPaths = async () => {
-  const articles: DevtoPublishedArticle[] = await DevtoService.getDevtoArticles()
+  const articles: DevtoPublishedArticle[] =
+    await DevtoService.getDevtoArticles()
 
   const paths = articles.map((article) => ({
     params: { id: article.id.toString() }

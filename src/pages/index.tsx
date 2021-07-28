@@ -14,7 +14,7 @@ import {
   QuoteHome,
   SubtitleHome,
   TitleHome
-} from '../components/Pages/Home/styles'
+} from '../components/pages/home/styles'
 import Skills from '../components/Skills'
 
 const Index = () => (
@@ -31,11 +31,7 @@ const Index = () => (
       <DescriptionHome>
         <p>
           Actualmente estoy trabajando como <b>Frontend Engineer</b> en{' '}
-          <a
-            href="https://genial.ly/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://genial.ly/" target="_blank" rel="noreferrer">
             Genially
           </a>
           .
@@ -43,13 +39,13 @@ const Index = () => (
         <p>
           Me considero una persona trabajadora e inconformista, nunca considero
           que algo está lo suficientemente bien. Soy bastante metódico y
-          constante para poder alcanzar mis metas, además me gustan los{' '}
-          <b>retos constantes</b>, no quiero aburrirme 😄.
+          constante para poder alcanzar mis metas. Además me apasionan{' '}
+          <b>retos constantes</b>, no me gusta aburrirme 😄.
         </p>
         <p>
           Por otro lado, me encanta el deporte. He practicado <b>TAEKWONDO</b>{' '}
-          🥋 durante casi 20 años obteniendo el cinturón negro <b>1er DAN</b>{' '}
-          en el año 2012.
+          🥋 durante casi 20 años, llegando a obtener el cinturón negro{' '}
+          <b>1er DAN</b>.
         </p>
       </DescriptionHome>
     </DescriptionHomeContainer>

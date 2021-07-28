@@ -9,13 +9,15 @@
     "eslint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "jest": "jest --silent",
     "jest-with-coverage": "jest --coverage",
-    "lighthouse-badges": "lighthouse-badges --urls https://miguelgm.dev/ https://miguelgm.dev/presentations https://miguelgm.dev/posts https://miguelgm.dev/aboutMe  https://miguelgm.dev/contact"
+    "lighthouse-badges": "lighthouse-badges --urls https://miguelgm.dev/ https://miguelgm.dev/presentations https://miguelgm.dev/posts https://miguelgm.dev/aboutMe  https://miguelgm.dev/contact",
+    "prepare": "husky install"
   },
   "dependencies": {
     "add": "^2.0.6",
     "babel-loader": "^8.1.0",
     "babel-plugin-import": "^1.13.0",
     "babel-plugin-styled-components": "^1.11.1",
+    "eslint-plugin-prettier": "^3.4.0",
     "framer-motion": "^2.5.1",
     "i18next": "^19.5.3",
     "i18next-browser-languagedetector": "^5.0.0",
@@ -23,6 +25,7 @@
     "next": "^10.0.3",
     "next-pwa": "^5.0.1",
     "node-sass": "^4.13.1",
+    "prettier": "^2.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-event-timeline": "^1.6.3",
@@ -55,8 +58,18 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": ">=6",
     "jest": "^26.6.3",
+    "lint-staged": ">=10",
     "ts-jest": "^26.5.4",
     "typescript": "^3.9.6"
+  },
+  "lint-staged": {
+    "*.(ts|tsx|html|scss)": [
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    ]
   }
 }

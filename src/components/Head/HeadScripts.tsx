@@ -2,10 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 const HeadScripts = () => {
-  return (
-    <Head>
-    </Head>
-  )
+  return <Head></Head>
 }
 
 export default React.memo(HeadScripts)

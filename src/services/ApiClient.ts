@@ -1,11 +1,11 @@
 class ApiClient {
-  public static get (url: string) {
+  public static get(url: string) {
     return this._handleFetch(url, {
       method: 'GET'
     })
   }
 
-  private static async _handleFetch (url: string, options: RequestInit) {
+  private static async _handleFetch(url: string, options: RequestInit) {
     const response = await fetch(url, {
       ...options,
       headers: {
@@ -18,7 +18,7 @@ class ApiClient {
     return body
   }
 
-  private static async _parseBody (response: Response) {
+  private static async _parseBody(response: Response) {
     try {
       const body = await response.json()
       return { body, error: null }

@@ -1,17 +1,15 @@
 /* eslint-disable camelcase */
 import React from 'react'
-import { FaTwitter, FaLinkedin, FaDev, FaGithub } from 'react-icons/fa'
-import { AiOutlineMail } from 'react-icons/ai'
 import { GetStaticProps } from 'next'
 
-import { Avatar } from '../components/Contact/Avatar'
-import {
-  Name,
-  Description,
-  Social,
-  ContainerContact
-} from '../components/Contact/styles'
 import { SOCIAL_MEDIA } from '../data/socialMedia'
+import {
+  Avatar,
+  ContainerContact,
+  Description,
+  Name,
+  Social
+} from '../components/pages/contact/styles'
 
 const Contact = () => {
   return (

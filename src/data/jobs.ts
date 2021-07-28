@@ -1,7 +1,7 @@
-import EurotransIcon from '../components/icons/EurotransIcon'
-import GeniallyIcon from '../components/icons/GeniallyIcon'
-import SopinetIcon from '../components/icons/SopinetIcon'
-import WealizeIcon from '../components/icons/WealizeIcon'
+import EurotransIcon from '../icons/EurotransIcon'
+import GeniallyIcon from '../icons/GeniallyIcon'
+import SopinetIcon from '../icons/SopinetIcon'
+import WealizeIcon from '../icons/WealizeIcon'
 import { colors } from '../theme/color'
 
 export const jobs = [

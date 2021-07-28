@@ -2,8 +2,8 @@ import React from 'react'
 import { GetStaticProps } from 'next'
 
 import { presentations } from '../data/presentations'
-import PresentationsList from '../components/presentations/PresentationsList'
-import { PresentationsListTitle } from '../components/presentations/styles'
+import PresentationsList from '../components/PresentationsList'
+import { PresentationsListTitle } from '../components/PresentationsList/styles'
 
 const Presentations = () => (
   <>

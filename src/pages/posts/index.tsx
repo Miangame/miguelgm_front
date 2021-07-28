@@ -4,8 +4,8 @@ import { GetStaticProps } from 'next'
 
 import DevtoService from '../../services/DevtoService'
 import { DevtoPublishedArticle } from '../../interfaces/devto'
-import PostsList from '../../components/Posts/PostsList'
-import { PostListTitle } from '../../components/Posts/styles'
+import PostsList from '../../components/PostsList'
+import { PostListTitle } from '../../components/PostsList/styles'
 
 type PostsPageProps = {
   articles: DevtoPublishedArticle[]
@@ -19,7 +19,8 @@ const Posts = ({ articles }: PostsPageProps) => (
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  const articles: DevtoPublishedArticle[] = await DevtoService.getDevtoArticles()
+  const articles: DevtoPublishedArticle[] =
+    await DevtoService.getDevtoArticles()
 
   return {
     props: {

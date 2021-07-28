@@ -1,6 +1,6 @@
 import swr, { ConfigInterface } from 'swr'
 
-export function useSWR<A> (
+export function useSWR<A>(
   key: string,
   fetcher: any,
   config?: ConfigInterface<A, Error, any>

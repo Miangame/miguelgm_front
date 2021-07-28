@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import useDarkMode from 'use-dark-mode'
 
 import Head from '../components/Head/Head'
-import Layout from '../components/layout/Layout'
+import Layout from '../components/Layout'
 import { GlobalStyles } from '../components/Global/GlobalStyles'
 import { darkTheme, lightTheme } from '../theme/theme'
 
