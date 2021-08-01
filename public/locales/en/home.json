@@ -1,4 +1,13 @@
 {
   "hi": "Hi!",
-  "who_am_i": "I'm Miguel Ángel."
+  "who_am_i": "I'm Miguel Ángel.",
+  "description": {
+    "presentation": "I am currently working as a <b>Frontend Engineer</b> at",
+    "description": "I consider myself a hard worker and a non-conformist, I never consider that something is good enough. I am quite methodical and constant in order to achieve my goals. I am also passionate about <b>constant challenges</b>, I don't like to get bored 😄.",
+    "other": "On the other hand, I love sport. I have been practising TAEKWONDO 🥋 for almost 20 years, obtaining a 1st DAN black belt."
+  },
+  "experience": "My experience",
+  "download_cv": "Download my updated CV",
+  "skills": "My skills",
+  "quote": "Choose a job you love, and you will never have to work a day in your life."
 }

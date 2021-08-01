@@ -1,6 +1,7 @@
 import React from 'react'
 import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 
 import Experience from '../components/Experience'
 import {
@@ -19,6 +20,8 @@ import {
 import Skills from '../components/Skills'
 
 const Index = () => {
+  const { t } = useTranslation(['common', 'home'])
+
   return (
     <HomeContainer>
       <ImageHomeContainer>
@@ -30,51 +33,53 @@ const Index = () => {
       </ImageHomeContainer>
       <DescriptionHomeContainer>
         <HiHome>
-          ¡Hola! <span>👋🏽</span>
+          {t('home:hi')} <span>👋🏽</span>
         </HiHome>
-        <NameHome>Soy Miguel Ángel.</NameHome>
-        <SubtitleHome>Software Engineer / Web Developer</SubtitleHome>
+        <NameHome>{t('home:who_am_i')}</NameHome>
+        <SubtitleHome>{t('profession')}</SubtitleHome>
         <DescriptionHome>
           <p>
-            Actualmente estoy trabajando como <b>Frontend Engineer</b> en{' '}
+            <span
+              dangerouslySetInnerHTML={{
+                __html: t('home:description.presentation', {
+                  interpolation: { escapeValue: false }
+                })
+              }}
+            ></span>{' '}
             <a href="https://genial.ly/" target="_blank" rel="noreferrer">
               Genially
             </a>
             .
           </p>
-          <p>
-            Me considero una persona trabajadora e inconformista, nunca
-            considero que algo está lo suficientemente bien. Soy bastante
-            metódico y constante para poder alcanzar mis metas. Además me
-            apasionan <b>retos constantes</b>, no me gusta aburrirme 😄.
-          </p>
-          <p>
-            Por otro lado, me encanta el deporte. He practicado <b>TAEKWONDO</b>{' '}
-            🥋 durante casi 20 años, llegando a obtener el cinturón negro{' '}
-            <b>1er DAN</b>.
-          </p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: t('home:description.description', {
+                interpolation: { escapeValue: false }
+              })
+            }}
+          ></p>
+          <p>{t('home:description.other')}</p>
         </DescriptionHome>
       </DescriptionHomeContainer>
       <AboutMe>
         <div>
-          <TitleHome>Mi experiencia</TitleHome>
+          <TitleHome>{t('home:experience')}</TitleHome>
           <a
             download="cv-miguel-gavilan-merino.pdf"
             target="_blank"
             href="../cv-miguel-gavilan-merino.pdf"
           >
-            Descarga mi CV actualizado
+            {t('home:download_cv')}
           </a>
           <Experience />
         </div>
         <div>
-          <TitleHome>Mis habilidades</TitleHome>
+          <TitleHome>{t('home:skills')}</TitleHome>
           <Skills />
         </div>
       </AboutMe>
       <QuoteHome>
-        Choose a job you love, and you will never have to work a day in your
-        life.
+        {t('home:quote')}
         <span>Confucius</span>
       </QuoteHome>
     </HomeContainer>
@@ -84,7 +89,7 @@ const Index = () => {
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['home']))
+      ...(await serverSideTranslations(locale, ['common', 'home']))
     }
   }
 }

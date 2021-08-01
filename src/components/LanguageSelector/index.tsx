@@ -25,7 +25,11 @@ const LanguageSelector = () => {
       />
       {selectorOpened && (
         <LocaleSelectorList>
-          {LOCALES_AVAILABLES.map((__lng) => (
+          {LOCALES_AVAILABLES.sort((a, b) => {
+            if (a === locale) return -1
+            else if (b === locale) return 1
+            else return a.localeCompare(b)
+          }).map((__lng) => (
             <LocaleSelectorItem
               key={__lng}
               locale={__lng}

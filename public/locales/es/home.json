@@ -1,3 +1,13 @@
 {
-  "hi": "¡Hola!"
+  "hi": "¡Hola!",
+  "who_am_i": "Soy Miguel Ángel.",
+  "description": {
+    "presentation": "Actualmente estoy trabajando como <b>Frontend Engineer</b> en",
+    "description": "Me considero una persona trabajadora e inconformista, nunca considero que algo está lo suficientemente bien. Soy bastante metódico y constante para poder alcanzar mis metas. Además me apasionan <b>retos constantes</b>, no me gusta aburrirme 😄.",
+    "other": "Por otro lado, me encanta el deporte. He practicado TAEKWONDO 🥋 durante casi 20 años, llegando a obtener el cinturón negro 1er DAN."
+  },
+  "experience": "Mi experiencia",
+  "download_cv": "Descarga mi CV actualizado",
+  "skills": "Mis habilidades",
+  "quote": "Elige un trabajo que te guste y no tendrás que trabajar ni un solo día en tu vida."
 }
