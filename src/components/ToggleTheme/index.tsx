@@ -14,7 +14,7 @@ const getStyles = (darkMode: boolean) => ({
   }
 })
 
-const Toggle = () => {
+const ToggleTheme = () => {
   const darkMode = useDarkMode(false)
   const styles = getStyles(darkMode.value)
 
@@ -34,4 +34,4 @@ const Toggle = () => {
   )
 }
 
-export default Toggle
+export default ToggleTheme

@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { HREFS } from '../../constants/routesHref'
-import Toggle from '../Toggle'
+import ToggleTheme from '../ToggleTheme'
+import LanguageSelector from '../LanguageSelector'
 
 import { Ul } from './styles'
 
@@ -19,14 +20,17 @@ const RightNav = (props: RightNavProps) => {
   return (
     <Ul open={open}>
       {HREFS.map((href, index) => (
-        <li key={index} className={route === href.href ? 'active' : undefined}>
-          <Link href={href.href}>
+        <Link href={href.href} key={index}>
+          <li className={route === href.href ? 'active' : undefined}>
             <a>{href.desc}</a>
-          </Link>
-        </li>
+          </li>
+        </Link>
       ))}
       <li>
-        <Toggle />
+        <ToggleTheme />
+      </li>
+      <li>
+        <LanguageSelector />
       </li>
     </Ul>
   )
