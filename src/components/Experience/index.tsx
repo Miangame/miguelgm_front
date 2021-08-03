@@ -20,7 +20,8 @@ const Experience = () => {
           icon: Icon,
           cardColor,
           iconBackground,
-          dates,
+          dateFrom,
+          dateTo,
           iconShadow,
           title,
           city,
@@ -37,7 +38,7 @@ const Experience = () => {
             contentArrowStyle={{
               borderRight: `7px solid ${cardColor}`
             }}
-            date={dates}
+            date={`${t(dateFrom)} - ${t(dateTo)}`}
             iconStyle={{
               background: iconBackground,
               color: '#fff',
@@ -63,7 +64,11 @@ const Experience = () => {
               {abilities?.map((ability, indexAbility) => (
                 <li
                   key={indexAbility}
-                  dangerouslySetInnerHTML={{ __html: ability }}
+                  dangerouslySetInnerHTML={{
+                    __html: t(ability, {
+                      interpolation: { escapeValue: false }
+                    })
+                  }}
                 ></li>
               ))}
             </ul>

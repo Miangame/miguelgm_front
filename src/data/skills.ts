@@ -1,6 +1,7 @@
 export const skillGroups = [
   {
-    title: '⚛️ Front end development',
+    icon: '⚛️ ',
+    title: 'titles.frontend',
     skills: [
       'HTML5',
       'CSS3',
@@ -20,7 +21,8 @@ export const skillGroups = [
     ]
   },
   {
-    title: '💻 Back end development',
+    icon: '💻',
+    title: 'titles.backend',
     skills: [
       'API REST',
       'Python',
@@ -33,7 +35,8 @@ export const skillGroups = [
     ]
   },
   {
-    title: '⚙️ DevOps',
+    icon: '⚙️',
+    title: 'titles.devops',
     skills: [
       'CI/CD',
       'Git',
@@ -49,7 +52,8 @@ export const skillGroups = [
     ]
   },
   {
-    title: '☑️ Testing',
+    icon: '✅',
+    title: 'titles.testing',
     skills: ['Unit test', 'Testing library', 'Jest', 'Cypress', 'CI', 'CD']
   }
 ]

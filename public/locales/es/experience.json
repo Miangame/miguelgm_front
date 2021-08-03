@@ -3,5 +3,33 @@
   "software_engineer": "Ingeniero de Software",
   "web_developer": "Desarrollador Web",
   "trainee_web_developer": "Desarrollador Web en prácticas",
-  "remote": "Remoto"
+  "remote": "Remoto",
+  "present": "Actualidad",
+  "wealize_abilities": {
+    "interfaces_creation": "Creación de interfaces de usuario usando <strong>Typescript, Reactjs/Nextjs, Styled components, SWR, SSR</strong>.",
+    "design_systems": "Utilización de sistemas de diseño como <strong>Ant.design</strong> o <strong>Carbon design system</strong>.",
+    "tests": "Realización de pruebas de control de calidad para descubrir errores y optimizar la usabilidad con <strong>Cypress y tests unitarios</strong>.",
+    "tokens": "Generación y envío de tokens en blockchain usando <strong>Smart Contracts</strong>.",
+    "api_rest": "Creación de <strong>API REST</strong> con <strong>Python+Django</strong>.",
+    "payments": "Implementación de sistemas de pago con <strong>Stripe</strong> y <strong>PayPal</strong>.",
+    "ci_cd": "Implementación de CI/CD con <strong>GithubActions</strong> o <strong>CircleCI</strong>.",
+    "docker": "Uso de contenedores con <strong>Docker/Docker-compose</strong> y despliegue en <strong>Heroku</strong>.",
+    "version_control": "Control de versiones con <strong>Git</strong> y <strong>Github</strong>.",
+    "clean_code": "<strong>Clean code</strong>",
+    "clean_architecture": "<strong>Clean architecture</strong>"
+  },
+  "eurotrans_abilities": {
+    "interfaces_creation": "Diseño y creación de interfaces para nuevas funcionalidades con <strong>Symfony + Twig + Bootstrap</strong>.",
+    "api_rest": "Creación de API Rest con <strong>Symfony</strong>.",
+    "jquery": "JQuery.",
+    "refactor": "Refactor de código monolítico.",
+    "vps_deploy": "Despliegue a producción en VPS.",
+    "bash": "Automatización de tareas del servidor con <strong>Bash</strong>.",
+    "sql": "Creación de consultas complejas con <strong>SQL</strong>."
+  },
+  "sopinet_abilities": {
+    "interfaces_creation": "Creación de interfaces para herramientas internas de la empresa con <strong>Symfony+Twig</strong>.",
+    "api_rest": "Creación de <strong>API Rest</strong> con <strong>Symfony</strong>.",
+    "telegram_bot": "Creación y mantenimiento de un bot de telegram hecho con Symfony."
+  }
 }

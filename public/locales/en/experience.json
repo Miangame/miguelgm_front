@@ -3,5 +3,33 @@
   "software_engineer": "Software Engineer",
   "web_developer": "Web Developer",
   "trainee_web_developer": "Trainee Web Developer",
-  "remote": "Remote"
+  "remote": "Remote",
+  "present": "Present",
+  "wealize_abilities": {
+    "interfaces_creation": "Creation of user interfaces using <strong>Typescript, Reactjs/Nextjs, Styled components, SWR, SSR</strong>.",
+    "design_systems": "Using design systems such as <strong>Ant.design</strong> or <strong>Carbon design system</strong>.",
+    "tests": "Performing quality control tests to discover errors and optimise usability with <strong>Cypress and unit tests</strong>.",
+    "tokens": "Generating and sending tokens on blockchain using <strong>Smart Contracts</strong>.",
+    "api_rest": "Creation of <strong>API REST</strong> with <strong>Python+Django</strong>.",
+    "payments": "Implementation of payment systems with <strong>Stripe</strong> and <strong>PayPal</strong>.",
+    "ci_cd": "CI/CD implementation with <strong>GithubActions</strong> or <strong>CircleCI</strong>.",
+    "docker": "Container usage with <strong>Docker/Docker-compose</strong> and deployment in <strong>Heroku</strong>.",
+    "version_control": "Version control with <strong>Git</strong> and <strong>Github</strong>.",
+    "clean_code": "<strong>Clean code</strong>",
+    "clean_architecture": "<strong>Clean architecture</strong>"
+  },
+  "eurotrans_abilities": {
+    "interfaces_creation": "Design and creation of interfaces for new functionalities with <strong>Symfony + Twig + Bootstrap</strong>.",
+    "api_rest": "Creation of API Rest with <strong>Symfony</strong>.",
+    "jquery": "JQuery.",
+    "refactor": "Monolithic code refactor.",
+    "vps_deploy": "Deploy to production on VPS.",
+    "bash": "Automation of server tasks with <strong>Bash</strong>.",
+    "sql": "Creation of complex queries with <strong>SQL</strong>."
+  },
+  "sopinet_abilities": {
+    "interfaces_creation": "Creation of interfaces for internal company tools with <strong>Symfony+Twig</strong>",
+    "api_rest": "Creation of <strong>API Rest</strong> with <strong>Symfony</strong>.",
+    "telegram_bot": "Creation and maintenance of a telegram bot made with Symfony."
+  }
 }

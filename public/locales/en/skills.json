@@ -1,0 +1,8 @@
+{
+  "titles": {
+    "frontend": "Frontend development",
+    "backend": "Backend development",
+    "devops": "DevOps",
+    "testing": "Testing"
+  }
+}
