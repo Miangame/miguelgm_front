@@ -1,5 +1,6 @@
 import React from 'react'
 import { GetStaticProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import { presentations } from '../data/presentations'
 import PresentationsList from '../components/PresentationsList'
@@ -12,9 +13,11 @@ const Presentations = () => (
   </>
 )
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
-    props: {}
+    props: {
+      ...(await serverSideTranslations(locale, ['navbar']))
+    }
   }
 }
 

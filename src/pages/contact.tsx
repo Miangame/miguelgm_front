@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 import React from 'react'
 import { GetStaticProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import { SOCIAL_MEDIA } from '../data/socialMedia'
 import {
@@ -31,9 +32,11 @@ const Contact = () => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
-    props: {}
+    props: {
+      ...(await serverSideTranslations(locale, ['navbar']))
+    }
   }
 }
 

@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 import React from 'react'
 import { GetStaticProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import DevtoService from '../../services/DevtoService'
 import { DevtoPublishedArticle } from '../../interfaces/devto'
@@ -18,13 +19,14 @@ const Posts = ({ articles }: PostsPageProps) => (
   </>
 )
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const articles: DevtoPublishedArticle[] =
     await DevtoService.getDevtoArticles()
 
   return {
     props: {
-      articles
+      articles,
+      ...(await serverSideTranslations(locale, ['navbar']))
     }
   }
 }

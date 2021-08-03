@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import DevtoService from '../../services/DevtoService'
 import { DevtoArticle, DevtoPublishedArticle } from '../../interfaces/devto'
@@ -66,17 +67,18 @@ export const getStaticPaths = async () => {
     params: { id: article.id.toString() }
   }))
 
-  return { paths, fallback: false }
+  return { paths, fallback: true }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   const article: DevtoArticle = await DevtoService.getArticle(
     params.id as string
   )
 
   return {
     props: {
-      article
+      article,
+      ...(await serverSideTranslations(locale, ['navbar']))
     }
   }
 }

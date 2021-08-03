@@ -11,7 +11,7 @@ import {
 } from './styles'
 
 const LanguageSelector = () => {
-  const { pathname, locale, push } = useRouter()
+  const { pathname, asPath, locale, push, query } = useRouter()
   const [selectorOpened, toggleSelector] = useState(false)
 
   return (
@@ -36,7 +36,7 @@ const LanguageSelector = () => {
               as="div"
               onClick={(e) => {
                 e.preventDefault()
-                push(pathname, pathname, { locale: __lng })
+                push({ pathname, query }, asPath, { locale: __lng })
                 toggleSelector(false)
               }}
             />

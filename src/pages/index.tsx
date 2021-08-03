@@ -102,7 +102,8 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
         'common',
         'home',
         'experience',
-        'skills'
+        'skills',
+        'navbar'
       ]))
     }
   }
