@@ -1,4 +1,6 @@
 import React from 'react'
+import { TFunction } from 'i18next'
+import { useTranslation } from 'next-i18next'
 
 import { Presentation } from '../../interfaces/presentation'
 import Card from '../Card'
@@ -9,35 +11,39 @@ type PresentationsListProps = {
   presentations: Presentation[]
 }
 
-const getCardBody = (presentation: Presentation) => {
+const getCardBody = (t: TFunction, presentation: Presentation) => {
+  const { title, description, code, schedule } = presentation
   return (
     <PresentationBodyDetails>
-      <h2>{presentation.title}</h2>
-      <p>{presentation.description}</p>
+      <h2>{t(title)}</h2>
+      <p>{t(description)}</p>
       <p className="bottom">
-        {presentation.code && (
-          <a href={presentation.code} target="_blank" rel="noreferrer">
-            Código
+        {code && (
+          <a href={code} target="_blank" rel="noreferrer">
+            {t('code')}
           </a>
         )}
-        <a href={presentation.schedule} target="_blank" rel="noreferrer">
-          Programa
+        <a href={schedule} target="_blank" rel="noreferrer">
+          {t('schedule')}
         </a>
       </p>
     </PresentationBodyDetails>
   )
 }
 
-const PresentationsList = ({ presentations }: PresentationsListProps) => (
-  <PresentationsListContainer>
-    {presentations.map((presentation, index) => (
-      <Card
-        key={index}
-        image={presentation.image}
-        cardBody={getCardBody(presentation)}
-      />
-    ))}
-  </PresentationsListContainer>
-)
+const PresentationsList = ({ presentations }: PresentationsListProps) => {
+  const { t } = useTranslation('presentations')
+  return (
+    <PresentationsListContainer>
+      {presentations.map((presentation, index) => (
+        <Card
+          key={index}
+          image={presentation.image}
+          cardBody={getCardBody(t, presentation)}
+        />
+      ))}
+    </PresentationsListContainer>
+  )
+}
 
 export default PresentationsList

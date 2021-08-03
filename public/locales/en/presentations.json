@@ -1,0 +1,20 @@
+{
+  "code": "Code",
+  "schedule": "Schedule",
+  "sysmana_2017": {
+    "title": "SYSMANA 2020 - Introduction to Web Components with Next.JS",
+    "description": "Practical workshop with Next.JS for a first contact with Web Components."
+  },
+  "sysmana_2018": {
+    "title": "SYSMANA 2019 - Introduction to Symfony and Best Practices",
+    "description": "Introductory workshop to the Symfony framework using good practices (flow, routes, etc.)."
+  },
+  "sysmana_2019": {
+    "title": "SYSMANA 2018 - Vuejs VS Reactjs",
+    "description": "Introductory workshop on Vue and React, where the most important features and differences between them will be explained, as well as practical and guided examples of each of them to learn how to use both frameworks."
+  },
+  "sysmana_2020": {
+    "title": "SYSMANA 2017 - Projects with Rapsberry Pi",
+    "description": "Different projects with a Raspberry Pi, from the creation of an online printer to the creation and assembly of an arcade machine."
+  }
+}

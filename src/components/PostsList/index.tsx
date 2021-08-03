@@ -3,6 +3,8 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import { BsHeart } from 'react-icons/bs'
 import { FaRegComment } from 'react-icons/fa'
+import { TFunction } from 'i18next'
+import { useTranslation } from 'next-i18next'
 
 import { DevtoPublishedArticle } from '../../interfaces/devto'
 import Card from '../Card'
@@ -23,7 +25,7 @@ type PostsListProps = {
   posts: DevtoPublishedArticle[]
 }
 
-const getCardBody = (post: DevtoPublishedArticle) => (
+const getCardBody = (t: TFunction, post: DevtoPublishedArticle) => (
   <PostsBodyDetails>
     <PostInformation>
       <PostAuthorImage
@@ -61,7 +63,7 @@ const getCardBody = (post: DevtoPublishedArticle) => (
     </ListPostReactions>
     <p className="bottom">
       <a href={post.url} target="_blank" rel="noreferrer">
-        Ver post original
+        {t('see_original_post')}
       </a>
     </p>
   </PostsBodyDetails>
@@ -69,13 +71,14 @@ const getCardBody = (post: DevtoPublishedArticle) => (
 
 const PostsList = ({ posts }: PostsListProps) => {
   const router = useRouter()
+  const { t } = useTranslation('common')
   return (
     <PostsListContainer>
       {posts?.map((post, index) => (
         <Card
           key={index}
           image={post.cover_image}
-          cardBody={getCardBody(post)}
+          cardBody={getCardBody(t, post)}
           onClick={() => {
             router.replace(`${router.pathname}/${post.id}`)
           }}

@@ -2,33 +2,29 @@ import { Presentation } from '../interfaces/presentation'
 
 export const presentations = [
   {
-    title: 'SYSMANA 2020 - Introducción a Web Components con Next.JS',
-    description:
-      'Taller práctico con Next.JS para una primera toma de contacto con Web Components.',
+    title: 'sysmana_2020.title',
+    description: 'sysmana_2020.description',
     code: 'https://github.com/Miangame/Sysmana2020',
     image: 'img/next-js.png',
     schedule: 'https://informatica.iesgrancapitan.org/sysmanas/sysmana-xii/'
   },
   {
-    title: 'SYSMANA 2019 - Iniciación a Symfony y buenas prácticas',
-    description:
-      'Taller de iniciación al framework Symfony usando en todo momento buenas prácticas (flujo, rutas, etc).',
+    title: 'sysmana_2019.title',
+    description: 'sysmana_2019.description',
     code: 'https://github.com/Miangame/Sysmana2019',
     image: 'img/symfony.png',
     schedule: 'https://informatica.iesgrancapitan.org/sysmanas/sysmana-xi/'
   },
   {
-    title: 'SYSMANA 2018 - Vuejs VS Reactjs',
-    description:
-      'Taller de iniciación de Vue y React, donde se explicarán las características más importantes y las diferencias entre ellos, además de realizar ejemplos prácticos y guiados de cada uno de ellos para aprender a usar ambos framework.',
+    title: 'sysmana_2018.title',
+    description: 'sysmana_2018.description',
     code: 'https://github.com/Miangame/sysmana-reactJS',
     image: 'img/vue-vs-react.jpg',
     schedule: 'https://informatica.iesgrancapitan.org/sysmanas/sysmana-x/'
   },
   {
-    title: 'SYSMANA 2017 - Proyectos con Rapsberry Pi',
-    description:
-      'Distintos proyectos con una Raspberry Pi, desde la creación de una impresora en línea hasta la creación y montaje de una máquina recreativa.',
+    title: 'sysmana_2017.title',
+    description: 'sysmana_2017.description',
     image: 'img/raspberry.jpg',
     schedule: 'https://informatica.iesgrancapitan.org/sysmanas/sysmana-ix/'
   }

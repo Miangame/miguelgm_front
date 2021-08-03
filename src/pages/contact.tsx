@@ -2,6 +2,7 @@
 import React from 'react'
 import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 
 import { SOCIAL_MEDIA } from '../data/socialMedia'
 import {
@@ -13,11 +14,12 @@ import {
 } from '../components/pages/contact/styles'
 
 const Contact = () => {
+  const { t } = useTranslation('common')
   return (
     <ContainerContact>
       <Avatar src="img/avatar2.jpeg" loading="lazy" />
       <Name>Miguel Ángel Gavilán Merino</Name>
-      <Description>Software Engineer | Web Developer</Description>
+      <Description>{t('profession')}</Description>
       <Social>
         {SOCIAL_MEDIA.map(({ link, icon }, index) => {
           const Icon = icon
@@ -35,7 +37,7 @@ const Contact = () => {
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['navbar']))
+      ...(await serverSideTranslations(locale, ['navbar', 'common']))
     }
   }
 }

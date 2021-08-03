@@ -26,7 +26,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       articles,
-      ...(await serverSideTranslations(locale, ['navbar']))
+      ...(await serverSideTranslations(locale, ['navbar', 'common']))
     }
   }
 }
