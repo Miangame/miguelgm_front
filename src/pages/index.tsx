@@ -58,7 +58,13 @@ const Index = () => {
               })
             }}
           ></p>
-          <p>{t('home:description.other')}</p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: t('home:description.other', {
+                interpolation: { escapeValue: false }
+              })
+            }}
+          ></p>
         </DescriptionHome>
       </DescriptionHomeContainer>
       <AboutMe>
