@@ -67,8 +67,8 @@ export const getStaticPaths = async () => {
   const articles: DevtoPublishedArticle[] =
     await DevtoService.getDevtoArticles()
 
-  const paths = articles.map((article) => ({
-    params: { id: article.id.toString() }
+  const paths = articles.map(({ id }) => ({
+    params: { id: id.toString() }
   }))
 
   return { paths, fallback: true }
