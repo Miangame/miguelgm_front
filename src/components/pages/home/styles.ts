@@ -108,6 +108,12 @@ export const AboutMe = styled.section`
   `}
 `
 
+export const QuoteHomeContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`
+
 export const QuoteHome = styled.blockquote`
   font-size: 1.2em;
   width: 80%;

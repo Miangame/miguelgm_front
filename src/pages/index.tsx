@@ -15,7 +15,8 @@ import {
   ProfileImageHome,
   QuoteHome,
   SubtitleHome,
-  TitleHome
+  TitleHome,
+  QuoteHomeContainer
 } from '../components/pages/home/styles'
 import Skills from '../components/Skills'
 
@@ -84,10 +85,12 @@ const Index = () => {
           <Skills />
         </div>
       </AboutMe>
-      <QuoteHome>
-        {t('home:quote')}
-        <span>Confucius</span>
-      </QuoteHome>
+      <QuoteHomeContainer>
+        <QuoteHome>
+          {t('home:quote')}
+          <span>Confucius</span>
+        </QuoteHome>
+      </QuoteHomeContainer>
     </HomeContainer>
   )
 }

@@ -24,6 +24,7 @@ export const Ul = styled.ul`
   z-index: 1;
 
   li {
+    cursor: pointer;
     padding: 18px 16px;
     display: flex;
     align-items: center;
