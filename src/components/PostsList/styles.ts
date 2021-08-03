@@ -71,6 +71,7 @@ export const PostAuthorName = styled.div`
 export const ListPostTitle = styled.h2`
   font-size: 24px;
   font-weight: 700;
+  line-height: initial;
 `
 
 export const ListPostTags = styled.div`

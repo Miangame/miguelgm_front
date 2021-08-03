@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import 'react-vertical-timeline-component/style.min.css'
 import { AiFillStar } from 'react-icons/ai'
 import { ThemeContext } from 'styled-components'
+import { useTranslation } from 'next-i18next'
 
 import { jobs } from '../../data/jobs'
 import { colors } from '../../theme/color'
@@ -10,41 +11,56 @@ import { VerticalTimelineCustom, VerticalTimelineElementCustom } from './styles'
 
 const Experience = () => {
   const themeContext = useContext(ThemeContext)
+  const { t } = useTranslation('experience')
 
   return (
     <VerticalTimelineCustom className="vertical-timeline-custom-line">
       {jobs.map((job, index) => {
-        const Icon = job.icon
+        const {
+          icon: Icon,
+          cardColor,
+          iconBackground,
+          dates,
+          iconShadow,
+          title,
+          city,
+          remote,
+          url,
+          place,
+          abilities
+        } = job
         return (
           <VerticalTimelineElementCustom
             key={index}
             className="vertical-timeline-element--work"
-            contentStyle={{ background: job.cardColor }}
+            contentStyle={{ background: cardColor }}
             contentArrowStyle={{
-              borderRight: `7px solid ${job.cardColor}`
+              borderRight: `7px solid ${cardColor}`
             }}
-            date={job.dates}
+            date={dates}
             iconStyle={{
-              background: job.iconBackground,
+              background: iconBackground,
               color: '#fff',
-              boxShadow: `0 0 0 4px ${job.iconShadow}, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05)`
+              boxShadow: `0 0 0 4px ${iconShadow}, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05)`
             }}
             icon={<Icon />}
           >
-            <h3 className="vertical-timeline-element-title">{job.title}</h3>
+            <h3 className="vertical-timeline-element-title">{t(title)}</h3>
             <h4 className="vertical-timeline-element-subtitle">
               <a
-                href={job.url}
+                href={url}
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: colors.primary }}
               >
-                {job.place}
+                {place}
               </a>
             </h4>
-            <h4 className="vertical-timeline-element-subtitle">{job.city}</h4>
+            <h4 className="vertical-timeline-element-subtitle">
+              {city} {remote && `(${t('remote')})`}
+            </h4>
             <ul>
-              {job.abilities?.map((ability, indexAbility) => (
+              {abilities?.map((ability, indexAbility) => (
                 <li
                   key={indexAbility}
                   dangerouslySetInnerHTML={{ __html: ability }}

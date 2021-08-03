@@ -38,4 +38,8 @@ export const PresentationBodyDetails = styled.div`
   a {
     margin-right: 15px;
   }
+
+  h2 {
+    line-height: initial;
+  }
 `

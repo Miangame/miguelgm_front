@@ -6,22 +6,24 @@ import { colors } from '../theme/color'
 
 export const jobs = [
   {
-    title: 'Frontend Developer',
+    title: 'frontend_developer',
     dates: '07/2021 - Actualidad',
     place: 'Genially',
     url: 'https://genial.ly/',
-    city: 'Córdoba, España (Remoto)',
+    city: 'Córdoba, España',
+    remote: true,
     icon: GeniallyIcon,
     cardColor: colors.geniallyGradient,
     iconBackground: colors.geniallyGradient,
     iconShadow: colors.geniallyPrimary
   },
   {
-    title: 'Software Engineer',
+    title: 'software_engineer',
     dates: '07/2019 - 06/2021',
     place: 'Wealize',
     url: 'https://wealize.digital/',
-    city: 'Córdoba, España (Remoto)',
+    city: 'Córdoba, España',
+    remote: true,
     icon: WealizeIcon,
     cardColor: colors.wealizeSecondary,
     iconBackground: colors.wealizeSecondary,
@@ -41,9 +43,10 @@ export const jobs = [
     ]
   },
   {
-    title: 'Web Developer',
+    title: 'web_developer',
     dates: '06/2018 - 07/2019',
     place: 'Eurotransportcar',
+    remote: false,
     url: 'https://www.eurotransportcar.com/',
     city: 'Córdoba, España',
     icon: EurotransIcon,
@@ -61,11 +64,12 @@ export const jobs = [
     ]
   },
   {
-    title: 'Web Developer en prácticas',
+    title: 'trainee_web_developer',
     dates: '03/2018 - 06/2018',
     place: 'Sopinet Software',
     url: 'https://sopinet.com/',
     city: 'Córdoba, España',
+    remote: false,
     icon: SopinetIcon,
     cardColor: colors.sopinetPrimary,
     iconBackground: colors.sopinetBackground,
