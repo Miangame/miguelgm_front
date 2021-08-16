@@ -66,4 +66,26 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.colors.main};
   }
+
+  .moon-logo {
+    opacity: 0;
+    transform: translateY(20%) rotateZ(50deg);
+    transition: all 1s ease-out;
+  }
+
+  .sun-logo {
+    opacity: 1;
+    transform: translateY(0) rotateZ(0deg);
+    transition: all 1s ease-out;
+  }
+
+  .animate-hide-sun {
+    opacity: 0;
+    transform: translateY(20%) rotateZ(100deg);
+  }
+
+  .animate-show-moon {
+    opacity: 1;
+    transform: translateY(0%) rotateZ(0deg);
+  }
 `

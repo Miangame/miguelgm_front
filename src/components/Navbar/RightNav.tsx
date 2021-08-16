@@ -4,8 +4,8 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 
 import { HREFS } from '../../constants/routesHref'
-import ToggleTheme from '../ToggleTheme'
 import LanguageSelector from '../LanguageSelector'
+import ThemeSwitcher from '../ThemeSwitcher'
 
 import { Ul } from './styles'
 
@@ -29,7 +29,7 @@ const RightNav = (props: RightNavProps) => {
         </Link>
       ))}
       <li>
-        <ToggleTheme />
+        <ThemeSwitcher />
       </li>
       <li>
         <LanguageSelector />
