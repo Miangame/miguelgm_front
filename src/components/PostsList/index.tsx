@@ -79,6 +79,7 @@ const PostsList = ({ posts }: PostsListProps) => {
           key={index}
           image={post.cover_image}
           cardBody={getCardBody(t, post)}
+          clickable={true}
           onClick={() => {
             router.replace(`${router.pathname}/${post.id}`)
           }}

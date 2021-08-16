@@ -5,11 +5,12 @@ import { CardBody, CardContainer, CardImageContainer } from './styles'
 type CardProps = {
   image: string
   cardBody: ReactNode
+  clickable?: boolean
   onClick?: () => void
 }
 
-const Card = ({ image, cardBody, onClick }: CardProps) => (
-  <CardContainer onClick={onClick}>
+const Card = ({ image, cardBody, clickable, onClick }: CardProps) => (
+  <CardContainer onClick={onClick} $clickable={clickable}>
     <CardImageContainer>
       <img src={image} loading="lazy" />
     </CardImageContainer>
