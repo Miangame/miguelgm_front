@@ -29,13 +29,13 @@ export const Name = styled.p`
 export const Description = styled.p`
   font-size: 18px;
   font-weight: 600;
-  color: ${({ theme }) => theme.colors.main};
+  color: ${({ theme }): string => theme.colors.main};
 `
 
 export const Social = styled.div`
   margin-top: 20px;
   a {
-    color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }): string => theme.colors.main};
     margin: 8px;
     transition: all 0.5s ease;
   }

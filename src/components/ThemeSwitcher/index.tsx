@@ -6,7 +6,7 @@ import { colors } from '../../theme/color'
 
 import { ThemeSwitcherButton } from './styles'
 
-const ThemeSwitcher = () => {
+const ThemeSwitcher = (): JSX.Element => {
   const darkMode = useDarkMode(false)
   return (
     <ThemeSwitcherButton onClick={darkMode.toggle}>

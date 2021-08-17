@@ -10,7 +10,7 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  cursor: ${({ $clickable }: CardContainerProps) =>
+  cursor: ${({ $clickable }: CardContainerProps): string =>
     $clickable ? 'pointer' : 'unset'};
 `
 

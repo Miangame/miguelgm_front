@@ -5,7 +5,7 @@ import Navbar from '../Navbar'
 
 import { LayoutContainer, LayoutChildrenContainer } from './styles'
 
-const Layout = (props: LayoutProps) => {
+const Layout = (props: LayoutProps): JSX.Element => {
   const { children } = props
 
   return (

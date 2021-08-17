@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EurotransIcon = (props: React.SVGProps<SVGSVGElement>) => {
+const EurotransIcon = (props: React.SVGProps<SVGSVGElement>): JSX.Element => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

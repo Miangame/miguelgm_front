@@ -9,7 +9,12 @@ type CardProps = {
   onClick?: () => void
 }
 
-const Card = ({ image, cardBody, clickable, onClick }: CardProps) => (
+const Card = ({
+  image,
+  cardBody,
+  clickable,
+  onClick
+}: CardProps): JSX.Element => (
   <CardContainer onClick={onClick} $clickable={clickable}>
     <CardImageContainer>
       <img src={image} loading="lazy" />

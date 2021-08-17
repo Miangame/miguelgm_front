@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import React from 'react'
 import Image from 'next/image'
-import { GetStaticProps } from 'next'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 
@@ -20,7 +20,7 @@ type PostProps = {
   article: DevtoArticle
 }
 
-const PostPage = ({ article }: PostProps) => {
+const PostPage = ({ article }: PostProps): JSX.Element => {
   const { t } = useTranslation('common')
   return (
     <PostContainer>
@@ -63,7 +63,7 @@ const PostPage = ({ article }: PostProps) => {
   )
 }
 
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const articles: DevtoPublishedArticle[] =
     await DevtoService.getDevtoArticles()
 

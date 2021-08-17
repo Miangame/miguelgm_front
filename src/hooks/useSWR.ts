@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import swr, { ConfigInterface } from 'swr'
 
 export function useSWR<A>(

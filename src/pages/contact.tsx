@@ -13,7 +13,7 @@ import {
   Social
 } from '../components/pages/contact/styles'
 
-const Contact = () => {
+const Contact = (): JSX.Element => {
   const { t } = useTranslation('common')
   return (
     <ContainerContact>

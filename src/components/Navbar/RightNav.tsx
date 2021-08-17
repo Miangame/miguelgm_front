@@ -13,7 +13,7 @@ interface RightNavProps {
   open?: boolean
 }
 
-const RightNav = (props: RightNavProps) => {
+const RightNav = (props: RightNavProps): JSX.Element => {
   const { open } = props
 
   const { route } = useRouter()

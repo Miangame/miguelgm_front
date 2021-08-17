@@ -20,7 +20,7 @@ import {
 } from '../components/pages/home/styles'
 import Skills from '../components/Skills'
 
-const Index = () => {
+const Index = (): JSX.Element => {
   const { t } = useTranslation(['common', 'home'])
 
   return (

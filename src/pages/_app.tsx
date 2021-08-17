@@ -4,17 +4,17 @@ import { ThemeProvider } from 'styled-components'
 import useDarkMode from 'use-dark-mode'
 import { appWithTranslation } from 'next-i18next'
 
-import Head from '../components/Head/Head'
+import Head from '../components/Head'
 import { GlobalStyles } from '../components/Global/GlobalStyles'
 import Layout from '../components/Layout'
 import { darkTheme, lightTheme } from '../theme/theme'
 
-const App = (props: AppProps) => {
+const App = (props: AppProps): JSX.Element => {
   const { Component, pageProps } = props
 
   const darkMode = useDarkMode()
 
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState<boolean>(false)
 
   useEffect(() => {
     setMounted(true)

@@ -29,7 +29,7 @@ export const VerticalTimelineCustom = styled(VerticalTimeline)`
 `
 
 export const VerticalTimelineElementCustom = styled(VerticalTimelineElement)`
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }): string => theme.colors.black};
 
   .vertical-timeline-element-date {
     margin: 0 10px;
@@ -42,7 +42,7 @@ export const VerticalTimelineElementCustom = styled(VerticalTimelineElement)`
 
   ${media.greaterThan('lg')`
     .vertical-timeline-element-date {
-      color: ${({ theme }) => theme.text};
+      color: ${({ theme }): string => theme.text};
     }
   `}
 `

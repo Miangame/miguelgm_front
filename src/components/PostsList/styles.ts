@@ -60,7 +60,7 @@ export const PostAuthorName = styled.div`
     margin-bottom: 0;
   }
   span {
-    color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }): string => theme.colors.main};
   }
   .date {
     margin: 0;

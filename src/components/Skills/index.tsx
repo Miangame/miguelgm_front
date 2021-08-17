@@ -5,7 +5,7 @@ import { skillGroups } from '../../data/skills'
 
 import { BoxSkills } from './styles'
 
-const Skills = () => {
+const Skills = (): JSX.Element => {
   const { t } = useTranslation('skills')
   return (
     <BoxSkills>

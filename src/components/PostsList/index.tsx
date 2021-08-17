@@ -25,51 +25,65 @@ type PostsListProps = {
   posts: DevtoPublishedArticle[]
 }
 
-const getCardBody = (t: TFunction, post: DevtoPublishedArticle) => (
-  <PostsBodyDetails>
-    <PostInformation>
-      <PostAuthorImage
-        src={post.user?.profile_image}
-        alt={post.user?.username}
-        loading="lazy"
-      />
-      <PostAuthorName>
-        <p>
-          <span>{post.user.name}</span>
-        </p>
-        <p className="date">{post.readable_publish_date}</p>
-      </PostAuthorName>
-    </PostInformation>
-    <ListPostTitle>{post.title}</ListPostTitle>
-    <ListPostTags>
-      {post.tag_list.map((tag, index) => (
-        <ListPostTag key={index}>#{tag}</ListPostTag>
-      ))}
-    </ListPostTags>
+const getCardBody = (
+  t: TFunction,
+  post: DevtoPublishedArticle
+): JSX.Element => {
+  const {
+    user,
+    readable_publish_date,
+    title,
+    tag_list,
+    comments_count,
+    public_reactions_count,
+    url
+  } = post
+  return (
+    <PostsBodyDetails>
+      <PostInformation>
+        <PostAuthorImage
+          src={user?.profile_image}
+          alt={user?.username}
+          loading="lazy"
+        />
+        <PostAuthorName>
+          <p>
+            <span>{user.name}</span>
+          </p>
+          <p className="date">{readable_publish_date}</p>
+        </PostAuthorName>
+      </PostInformation>
+      <ListPostTitle>{title}</ListPostTitle>
+      <ListPostTags>
+        {tag_list.map((tag, index) => (
+          <ListPostTag key={index}>#{tag}</ListPostTag>
+        ))}
+      </ListPostTags>
 
-    <ListPostReactions>
-      {post.comments_count > 0 && (
-        <>
-          <FaRegComment />
-          <span>{post.comments_count} coment.</span>
-        </>
-      )}
-      {post.public_reactions_count > 0 && (
-        <>
-          <BsHeart />
-          <span>{post.public_reactions_count} reacc.</span>
-        </>
-      )}
-    </ListPostReactions>
-    <p className="bottom">
-      <a href={post.url} target="_blank" rel="noreferrer">
-        {t('see_original_post')}
-      </a>
-    </p>
-  </PostsBodyDetails>
-)
+      <ListPostReactions>
+        {comments_count > 0 && (
+          <>
+            <FaRegComment />
+            <span>{comments_count} coment.</span>
+          </>
+        )}
+        {public_reactions_count > 0 && (
+          <>
+            <BsHeart />
+            <span>{public_reactions_count} reacc.</span>
+          </>
+        )}
+      </ListPostReactions>
+      <p className="bottom">
+        <a href={url} target="_blank" rel="noreferrer">
+          {t('see_original_post')}
+        </a>
+      </p>
+    </PostsBodyDetails>
+  )
+}
 
-const PostsList = ({ posts }: PostsListProps) => {
+const PostsList = ({ posts }: PostsListProps): JSX.Element => {
   const router = useRouter()
   const { t } = useTranslation('common')
   return (
@@ -80,7 +94,7 @@ const PostsList = ({ posts }: PostsListProps) => {
           image={post.cover_image}
           cardBody={getCardBody(t, post)}
           clickable={true}
-          onClick={() => {
+          onClick={(): void => {
             router.replace(`${router.pathname}/${post.id}`)
           }}
         />

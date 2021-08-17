@@ -67,7 +67,7 @@ export const TitleHome = styled.h3`
 
 export const SubtitleHome = styled.p`
   font-weight: 100;
-  color: ${({ theme }) => theme.colors.main};
+  color: ${({ theme }): string => theme.colors.main};
 `
 
 export const DescriptionHome = styled.div`
@@ -122,13 +122,13 @@ export const QuoteHome = styled.blockquote`
   font-style: italic;
   color: #555555;
   padding: 1.2em 30px 1.2em 35px;
-  border-left: 8px solid ${({ theme }) => theme.colors.main};
+  border-left: 8px solid ${({ theme }): string => theme.colors.main};
   line-height: 1.6;
   position: relative;
   background: #ededed;
 
   .fa-quote-left {
-    color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }): string => theme.colors.main};
     font-size: 1.5em;
     position: absolute;
     left: 15px;

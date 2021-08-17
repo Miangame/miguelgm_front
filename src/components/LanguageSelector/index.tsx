@@ -10,35 +10,41 @@ import {
   LocaleSelectorList
 } from './styles'
 
-const LanguageSelector = () => {
+const LanguageSelector = (): JSX.Element => {
   const { pathname, asPath, locale, push, query } = useRouter()
-  const [selectorOpened, toggleSelector] = useState(false)
+  const [selectorOpened, toggleSelector] = useState<boolean>(false)
+
+  const sortedLocales: string[] = LOCALES_AVAILABLES.sort((a, b) => {
+    if (a === locale) return -1
+    else if (b === locale) return 1
+    else return a.localeCompare(b)
+  })
+
+  const handleLocaleClick = (e: MouseEvent, lng: string): void => {
+    e.preventDefault()
+    push({ pathname, query }, asPath, { locale: lng })
+    toggleSelector(false)
+  }
 
   return (
     <LocaleSelectorContainer
-      onMouseLeave={() => setTimeout(() => toggleSelector(false), 100)}
+      onMouseLeave={(): number =>
+        setTimeout((): void => toggleSelector(false), 100)
+      }
     >
       <LocaleFlag
         locale={locale}
         as="div"
-        onClick={() => toggleSelector(!selectorOpened)}
+        onClick={(): void => toggleSelector(!selectorOpened)}
       />
       {selectorOpened && (
         <LocaleSelectorList>
-          {LOCALES_AVAILABLES.sort((a, b) => {
-            if (a === locale) return -1
-            else if (b === locale) return 1
-            else return a.localeCompare(b)
-          }).map((__lng) => (
+          {sortedLocales.map((__lng) => (
             <LocaleSelectorItem
               key={__lng}
               locale={__lng}
               as="div"
-              onClick={(e) => {
-                e.preventDefault()
-                push({ pathname, query }, asPath, { locale: __lng })
-                toggleSelector(false)
-              }}
+              onClick={(e): void => handleLocaleClick(e, __lng)}
             />
           ))}
         </LocaleSelectorList>

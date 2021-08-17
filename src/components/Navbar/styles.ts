@@ -32,20 +32,20 @@ export const Ul = styled.ul`
   }
 
   li.active {
-    background: ${({ theme }) => theme.colors.main};
+    background: ${({ theme }): string => theme.colors.main};
     border-radius: 5px;
 
     & > a {
-      color: ${({ theme }) => theme.colors.navigation};
+      color: ${({ theme }): string => theme.colors.navigation};
     }
   }
 
   li a {
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }): string => theme.text};
     text-decoration: none;
   }
 
-  ${(props: NavigationMenu) => {
+  ${(props: NavigationMenu): string => {
     if (props.open) {
       return media.lessThan('md')`
         transform: translateX(0);
@@ -59,7 +59,7 @@ export const Ul = styled.ul`
 
   ${media.lessThan('md')`
     flex-flow: column nowrap;
-    background-color: ${({ theme }) => theme.colors.main};
+    background-color: ${({ theme }): string => theme.colors.main};
     position: fixed;
     top: 0;
     right: 0;
@@ -68,7 +68,7 @@ export const Ul = styled.ul`
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     li a{
-      color: ${({ theme }) => theme.colors.navigation};
+      color: ${({ theme }): string => theme.colors.navigation};
     }
     li:hover {
       background: none;
@@ -94,22 +94,22 @@ export const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ theme, open }) =>
+    background-color: ${({ theme, open }): string =>
       open ? theme.colors.menuButtonOpened : theme.colors.menuButtonClosed};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
     &:nth-child(1) {
-      transform: ${(props: NavigationMenu) =>
+      transform: ${(props: NavigationMenu): string =>
         props.open ? 'rotate(45deg)' : 'rotate(0)'};
     }
     &:nth-child(2) {
-      transform: ${(props: NavigationMenu) =>
+      transform: ${(props: NavigationMenu): string =>
         props.open ? 'translateX(100%)' : 'translateX(0)'};
-      opacity: ${(props: NavigationMenu) => (props.open ? 0 : 1)};
+      opacity: ${(props: NavigationMenu): number => (props.open ? 0 : 1)};
     }
     &:nth-child(3) {
-      transform: ${(props: NavigationMenu) =>
+      transform: ${(props: NavigationMenu): string =>
         props.open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   }

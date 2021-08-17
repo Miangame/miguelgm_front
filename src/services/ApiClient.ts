@@ -1,11 +1,19 @@
+type BodyResponse = {
+  body?: any
+  error?: any
+}
+
 class ApiClient {
-  public static get(url: string) {
+  public static get(url: string): Promise<any> {
     return this._handleFetch(url, {
       method: 'GET'
     })
   }
 
-  private static async _handleFetch(url: string, options: RequestInit) {
+  private static async _handleFetch(
+    url: string,
+    options: RequestInit
+  ): Promise<any> {
     const response = await fetch(url, {
       ...options,
       headers: {
@@ -18,7 +26,7 @@ class ApiClient {
     return body
   }
 
-  private static async _parseBody(response: Response) {
+  private static async _parseBody(response: Response): Promise<BodyResponse> {
     try {
       const body = await response.json()
       return { body, error: null }

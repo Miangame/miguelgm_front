@@ -12,7 +12,7 @@ type PostsPageProps = {
   articles: DevtoPublishedArticle[]
 }
 
-const Posts = ({ articles }: PostsPageProps) => (
+const Posts = ({ articles }: PostsPageProps): JSX.Element => (
   <>
     <PostListTitle>Dev.to Posts</PostListTitle>
     <PostsList posts={articles} />

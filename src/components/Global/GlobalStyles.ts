@@ -54,8 +54,8 @@ export const GlobalStyles = createGlobalStyle`
 
   body, input, textarea, select, button {
     font-family: 'charter', sans-serif;
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
+    background: ${({ theme }): string => theme.body};
+    color: ${({ theme }): string => theme.text};
     line-height: 1.4em;
   }
 
@@ -64,7 +64,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }): string => theme.colors.main};
   }
 
   .moon-logo {

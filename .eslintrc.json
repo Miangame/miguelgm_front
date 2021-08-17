@@ -35,6 +35,7 @@
     "prettier/prettier": ["error"],
     "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
     "no-unused-vars": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -55,5 +56,14 @@
         ]
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      // enable the rule specifically for TypeScript files
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": ["error"]
+      }
+    }
+  ]
 }

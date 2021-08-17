@@ -9,7 +9,7 @@ import { colors } from '../../theme/color'
 
 import { VerticalTimelineCustom, VerticalTimelineElementCustom } from './styles'
 
-const Experience = () => {
+const Experience = (): JSX.Element => {
   const themeContext = useContext(ThemeContext)
   const { t } = useTranslation('experience')
 

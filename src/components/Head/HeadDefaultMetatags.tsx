@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-const HeadDefaultMetatags = () => (
+const HeadDefaultMetatags = (): JSX.Element => (
   <Head>
     <title>👨🏽‍💻 Miguel A. Gavilán | Web developer</title>
     <meta

@@ -11,7 +11,7 @@ type PresentationsListProps = {
   presentations: Presentation[]
 }
 
-const getCardBody = (t: TFunction, presentation: Presentation) => {
+const getCardBody = (t: TFunction, presentation: Presentation): JSX.Element => {
   const { title, description, code, schedule } = presentation
   return (
     <PresentationBodyDetails>
@@ -31,7 +31,9 @@ const getCardBody = (t: TFunction, presentation: Presentation) => {
   )
 }
 
-const PresentationsList = ({ presentations }: PresentationsListProps) => {
+const PresentationsList = ({
+  presentations
+}: PresentationsListProps): JSX.Element => {
   const { t } = useTranslation('presentations')
   return (
     <PresentationsListContainer>
