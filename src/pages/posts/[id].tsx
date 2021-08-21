@@ -15,6 +15,7 @@ import {
   PostTags,
   PostTitle
 } from '../../components/PostsList/styles'
+import { LOCALES_AVAILABLES } from '../../constants/locales'
 
 type PostProps = {
   article: DevtoArticle
@@ -67,15 +68,25 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const articles: DevtoPublishedArticle[] =
     await DevtoService.getDevtoArticles()
 
-  const paths = articles.map(({ id }) => ({
-    params: { id: id.toString() }
-  }))
+  const paths = LOCALES_AVAILABLES.reduce(
+    (acc, next) => [
+      ...acc,
+      ...articles.map(({ id }) => ({
+        params: { id: id.toString() },
+        locale: next
+      }))
+    ],
+    []
+  )
 
-  return { paths, fallback: true }
+  return {
+    paths,
+    fallback: true
+  }
 }
 
 export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
-  const article: DevtoArticle = await DevtoService.getArticle(
+  const article: DevtoPublishedArticle = await DevtoService.getArticle(
     params.id as string
   )
 
