@@ -102,6 +102,7 @@ export const ListPostReactions = styled.div`
 `
 
 export const PostContainer = styled.div`
+  margin-top: ${doublePx()};
   width: 100%;
 
   ${media.greaterThan('md')`
@@ -109,7 +110,9 @@ export const PostContainer = styled.div`
   `}
 `
 
-export const PostTitle = styled.h1``
+export const PostTitle = styled.h1`
+  line-height: 2.5rem;
+`
 
 export const PostOrganization = styled.div`
   display: flex;
@@ -161,6 +164,11 @@ export const PostBody = styled.div`
 
   code {
     background: #dedede;
+  }
+
+  h1,
+  h2 {
+    line-height: 2.5rem;
   }
 
   .article-body-image-wrapper {

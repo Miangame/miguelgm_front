@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 type CardContainerProps = {
-  $clickable?: boolean
+  clickable?: boolean
 }
 
 export const CardContainer = styled.div`
@@ -10,8 +10,8 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  cursor: ${({ $clickable }: CardContainerProps): string =>
-    $clickable ? 'pointer' : 'unset'};
+  cursor: ${({ clickable }: CardContainerProps): string =>
+    clickable ? 'pointer' : 'unset'};
 `
 
 export const CardImageContainer = styled.div`

@@ -15,7 +15,7 @@ const Card = ({
   clickable,
   onClick
 }: CardProps): JSX.Element => (
-  <CardContainer onClick={onClick} $clickable={clickable}>
+  <CardContainer onClick={onClick} clickable={clickable}>
     <CardImageContainer>
       <img src={image} loading="lazy" />
     </CardImageContainer>
