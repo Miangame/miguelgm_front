@@ -19,6 +19,7 @@ import {
   QuoteHomeContainer
 } from '../components/pages/home/styles'
 import Skills from '../components/Skills'
+import SocialIcons from '../components/SocialIcons'
 
 const Index = (): JSX.Element => {
   const { t } = useTranslation(['common', 'home'])
@@ -38,6 +39,7 @@ const Index = (): JSX.Element => {
         </HiHome>
         <NameHome>{t('home:who_am_i')}</NameHome>
         <SubtitleHome>{t('profession')}</SubtitleHome>
+        <SocialIcons />
         <DescriptionHome>
           <p>
             <span

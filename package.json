@@ -9,7 +9,7 @@
     "eslint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "jest": "jest --silent",
     "jest-with-coverage": "jest --coverage",
-    "lighthouse-badges": "lighthouse-badges --urls https://miguelgm.dev/ https://miguelgm.dev/presentations https://miguelgm.dev/posts https://miguelgm.dev/aboutMe  https://miguelgm.dev/contact",
+    "lighthouse-badges": "lighthouse-badges --urls https://miguelgm.dev/ https://miguelgm.dev/presentations https://miguelgm.dev/posts https://miguelgm.dev/aboutMe",
     "prepare": "husky install"
   },
   "dependencies": {
