@@ -22,7 +22,7 @@
     "i18next": "^19.5.3",
     "i18next-browser-languagedetector": "^5.0.0",
     "lighthouse-badges": "^1.0.35",
-    "next": "^10.0.3",
+    "next": "latest",
     "next-i18next": "^8.5.5",
     "next-pwa": "^5.0.1",
     "node-sass": "^4.13.1",
