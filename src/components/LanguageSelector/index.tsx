@@ -28,9 +28,9 @@ const LanguageSelector = (): JSX.Element => {
 
   return (
     <LocaleSelectorContainer
-      onMouseLeave={(): number =>
+      onMouseLeave={(): void => {
         setTimeout((): void => toggleSelector(false), 100)
-      }
+      }}
     >
       <LocaleFlag
         locale={locale}
