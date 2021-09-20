@@ -4,7 +4,7 @@ export const Social = styled.div`
   margin-top: 20px;
   a {
     color: ${({ theme }): string => theme.colors.main};
-    margin: 8px;
+    margin-right: 8px;
     transition: all 0.5s ease;
   }
 

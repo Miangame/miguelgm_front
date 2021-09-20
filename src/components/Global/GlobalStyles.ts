@@ -57,6 +57,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }): string => theme.body};
     color: ${({ theme }): string => theme.text};
     line-height: 1.4em;
+    transition: background-color 0.5s ease;
   }
 
   h1, h2, h3, h4, h5, h6 {

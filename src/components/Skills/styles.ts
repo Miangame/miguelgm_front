@@ -10,6 +10,7 @@ export const BoxSkills = styled.section`
   flex-direction: column;
   padding: 20px;
   position: relative;
+  transition: background-color 0.5s ease;
 
   p > span {
     background: ${colors.skillsBackground};
