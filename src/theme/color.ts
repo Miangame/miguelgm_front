@@ -19,8 +19,8 @@ export const colors = {
   phSecondary: '#191CB5',
   phGradient:
     'linear-gradient(142deg, rgba(230,77,42,1) 36%, rgba(25,28,181,1) 94%)',
-  geniallyPrimary: 'rgba(82,96,255,1)',
+  geniallyPrimary: 'rgba(82, 95, 255, 1)',
   geniallyGradient:
-    'linear-gradient(142deg, rgba(82,96,255,1) 0%, rgb(112, 206, 117) 25%, rgba(242,192,56,1) 50%, rgba(249,105,215,1) 100%)',
+    'linear-gradient(142deg, #F2B344 0%, #C8ED5B 16.67%, #74E6A7 33.34%, #5DA5FB 50%, #B156CD 66.67%, #F05480 83.34%, #F2B344 100%)',
   themeSwitcherIcon: '#ffbe00'
 }
