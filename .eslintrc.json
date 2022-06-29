@@ -14,14 +14,14 @@
     "plugin:jest/recommended",
     "plugin:react/recommended",
     "plugin:cypress/recommended",
-    "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint"
+    "prettier"
   ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly",
-    "cy": true
+    "cy": true,
+    "JSX": true,
+    "RequestInit": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
