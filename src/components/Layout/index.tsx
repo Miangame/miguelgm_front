@@ -5,17 +5,13 @@ import Navbar from '../Navbar'
 
 import { LayoutContainer, LayoutChildrenContainer } from './styles'
 
-const Layout = (props: LayoutProps): JSX.Element => {
-  const { children } = props
-
-  return (
-    <>
-      <Navbar />
-      <LayoutContainer>
-        <LayoutChildrenContainer>{children}</LayoutChildrenContainer>
-      </LayoutContainer>
-    </>
-  )
-}
+const Layout = ({ children }: LayoutProps): JSX.Element => (
+  <>
+    <Navbar />
+    <LayoutContainer>
+      <LayoutChildrenContainer>{children}</LayoutChildrenContainer>
+    </LayoutContainer>
+  </>
+)
 
 export default Layout

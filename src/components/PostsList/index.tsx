@@ -76,7 +76,7 @@ const getCardBody = (
       </ListPostReactions>
       <p className="bottom">
         <a href={url} target="_blank" rel="noreferrer">
-          {t('see_original_post')}
+          {t<string>('see_original_post')}
         </a>
       </p>
     </PostsBodyDetails>
