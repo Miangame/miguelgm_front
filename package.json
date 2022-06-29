@@ -12,6 +12,9 @@
     "lighthouse-badges": "lighthouse-badges --urls https://miguelgm.dev/ https://miguelgm.dev/presentations https://miguelgm.dev/posts https://miguelgm.dev/aboutMe",
     "prepare": "husky install"
   },
+  "engines": {
+    "node": ">=16.13.1"
+  },
   "dependencies": {
     "add": "^2.0.6",
     "babel-loader": "^8.1.0",
