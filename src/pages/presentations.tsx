@@ -3,8 +3,8 @@ import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import { presentations } from '../data/presentations'
-import PresentationsList from '../components/PresentationsList'
-import { PresentationsListTitle } from '../components/PresentationsList/styles'
+import PresentationsList from '../components/PresentationsList/PresentationsList'
+import { PresentationsListTitle } from '../components/PresentationsList/PresentationsList.styled'
 
 const Presentations = (): JSX.Element => (
   <>

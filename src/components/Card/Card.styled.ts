@@ -18,10 +18,10 @@ export const CardImageContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+`
 
-  img {
-    width: 100%;
-  }
+export const CardImage = styled.img`
+  width: 100%;
 `
 
 export const CardBody = styled.div`

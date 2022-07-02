@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Router } from 'next/router'
 
-import RightNav from './RightNav'
-import { StyledBurger } from './styles'
+import RightNav from '../RightNav/RightNav'
+
+import { StyledBurger } from './Burguer.styled'
 
 const Burger = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false)

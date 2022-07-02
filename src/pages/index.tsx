@@ -3,7 +3,7 @@ import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 
-import Experience from '../components/Experience'
+import Experience from '../components/ExperienceSection/ExperienceSection'
 import {
   AboutMe,
   DescriptionHome,
@@ -18,8 +18,8 @@ import {
   TitleHome,
   QuoteHomeContainer
 } from '../components/pages/home/styles'
-import Skills from '../components/Skills'
-import SocialIcons from '../components/SocialIcons'
+import Skills from '../components/Skills/Skills'
+import SocialIcons from '../components/SocialIcons/SocialIcons'
 
 const Index = (): JSX.Element => {
   const { t } = useTranslation(['common', 'home'])

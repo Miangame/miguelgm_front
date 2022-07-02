@@ -5,8 +5,8 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import DevtoService from '../../services/DevtoService'
 import { DevtoPublishedArticle } from '../../interfaces/devto'
-import PostsList from '../../components/PostsList'
-import { PostListTitle } from '../../components/PostsList/styles'
+import PostsList from '../../components/PostsList/PostList'
+import { PostListTitle } from '../../components/PostsList/PostList.styled'
 
 type PostsPageProps = {
   articles: DevtoPublishedArticle[]

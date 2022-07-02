@@ -7,7 +7,10 @@ import { useTranslation } from 'next-i18next'
 import { jobs } from '../../data/jobs'
 import { colors } from '../../theme/color'
 
-import { VerticalTimelineCustom, VerticalTimelineElementCustom } from './styles'
+import {
+  VerticalTimelineCustom,
+  VerticalTimelineElementCustom
+} from './ExperienceSection.styled'
 
 const Experience = (): JSX.Element => {
   const themeContext = useContext(ThemeContext)

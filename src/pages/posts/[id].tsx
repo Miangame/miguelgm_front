@@ -14,7 +14,7 @@ import {
   PostOrganization,
   PostTags,
   PostTitle
-} from '../../components/PostsList/styles'
+} from '../../components/PostsList/PostList.styled'
 import { LOCALES_AVAILABLES } from '../../constants/locales'
 
 type PostProps = {

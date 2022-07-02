@@ -4,7 +4,7 @@ import useDarkMode from 'use-dark-mode'
 
 import { colors } from '../../theme/color'
 
-import { ThemeSwitcherButton } from './styles'
+import { ThemeSwitcherButton } from './ThemeSwitcher.styled'
 
 const ThemeSwitcher = (): JSX.Element => {
   const darkMode = useDarkMode(false)

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import HeadLinks from './HeadLinks'
-import HeadDefaultMetatags from './HeadDefaultMetatags'
+import HeadLinks from './components/HeadLinks/HeadLinks'
+import HeadDefaultMetatags from './components/HeadDefaultMetatags/HeadDefaultMetatags'
 
 const Head = (): JSX.Element => (
   <>

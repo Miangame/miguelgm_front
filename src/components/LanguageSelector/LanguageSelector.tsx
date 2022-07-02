@@ -8,11 +8,11 @@ import {
   LocaleFlag,
   LocaleSelectorContainer,
   LocaleSelectorList
-} from './styles'
+} from './LanguageSelector.styled'
 
 const LanguageSelector = (): JSX.Element => {
   const { pathname, asPath, locale, push, query } = useRouter()
-  const [selectorOpened, toggleSelector] = useState<boolean>(false)
+  const [selectorOpened, setSelectorOpened] = useState<boolean>(false)
 
   const sortedLocales: string[] = LOCALES_AVAILABLES.sort((a, b) => {
     if (a === locale) return -1
@@ -23,20 +23,20 @@ const LanguageSelector = (): JSX.Element => {
   const handleLocaleClick = (e: MouseEvent, lng: string): void => {
     e.preventDefault()
     push({ pathname, query }, asPath, { locale: lng })
-    toggleSelector(false)
+    setSelectorOpened(false)
+  }
+
+  const handleMouseLeave = (): void => {
+    setTimeout((): void => setSelectorOpened(false), 100)
+  }
+
+  const handleOpenSelector = (): void => {
+    setSelectorOpened(!selectorOpened)
   }
 
   return (
-    <LocaleSelectorContainer
-      onMouseLeave={(): void => {
-        setTimeout((): void => toggleSelector(false), 100)
-      }}
-    >
-      <LocaleFlag
-        locale={locale}
-        as="div"
-        onClick={(): void => toggleSelector(!selectorOpened)}
-      />
+    <LocaleSelectorContainer onMouseLeave={handleMouseLeave}>
+      <LocaleFlag locale={locale} as="div" onClick={handleOpenSelector} />
       {selectorOpened && (
         <LocaleSelectorList>
           {sortedLocales.map((__lng) => (

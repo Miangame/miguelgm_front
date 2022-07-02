@@ -3,11 +3,11 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 
-import { HREFS } from '../../constants/routesHref'
-import LanguageSelector from '../LanguageSelector'
-import ThemeSwitcher from '../ThemeSwitcher'
+import { HREFS } from '../../../../constants/routesHref'
+import LanguageSelector from '../../../LanguageSelector/LanguageSelector'
+import ThemeSwitcher from '../../../ThemeSwitcher/ThemeSwitcher'
 
-import { Ul } from './styles'
+import { Ul } from './RightNav.styled'
 
 interface RightNavProps {
   open?: boolean

@@ -3,7 +3,7 @@ import React from 'react'
 
 import { skillGroups } from '../../data/skills'
 
-import { BoxSkills } from './styles'
+import { BoxSkills } from './Stkills.styled'
 
 const Skills = (): JSX.Element => {
   const { t } = useTranslation('skills')

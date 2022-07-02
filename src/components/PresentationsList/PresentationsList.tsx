@@ -3,9 +3,12 @@ import { TFunction } from 'i18next'
 import { useTranslation } from 'next-i18next'
 
 import { Presentation } from '../../interfaces/presentation'
-import Card from '../Card'
+import Card from '../Card/Card'
 
-import { PresentationBodyDetails, PresentationsListContainer } from './styles'
+import {
+  PresentationBodyDetails,
+  PresentationsListContainer
+} from './PresentationsList.styled'
 
 type PresentationsListProps = {
   presentations: Presentation[]

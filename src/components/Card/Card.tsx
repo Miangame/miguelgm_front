@@ -1,6 +1,11 @@
 import React, { ReactNode } from 'react'
 
-import { CardBody, CardContainer, CardImageContainer } from './styles'
+import {
+  CardBody,
+  CardContainer,
+  CardImage,
+  CardImageContainer
+} from './Card.styled'
 
 type CardProps = {
   image: string
@@ -17,7 +22,7 @@ const Card = ({
 }: CardProps): JSX.Element => (
   <CardContainer onClick={onClick} clickable={clickable}>
     <CardImageContainer>
-      <img src={image} loading="lazy" />
+      <CardImage src={image} loading="lazy" />
     </CardImageContainer>
     <CardBody>{cardBody}</CardBody>
   </CardContainer>

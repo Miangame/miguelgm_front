@@ -1,9 +1,9 @@
 import React from 'react'
 
 import { LayoutProps } from '../../interfaces/layout'
-import Navbar from '../Navbar'
+import Navbar from '../Navbar/Navbar'
 
-import { LayoutContainer, LayoutChildrenContainer } from './styles'
+import { LayoutContainer, LayoutChildrenContainer } from './Layout.styled'
 
 const Layout = ({ children }: LayoutProps): JSX.Element => (
   <>

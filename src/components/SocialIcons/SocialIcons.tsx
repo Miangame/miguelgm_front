@@ -2,7 +2,7 @@ import React from 'react'
 
 import { SOCIAL_MEDIA } from '../../data/socialMedia'
 
-import { Social } from './styles'
+import { Social } from './SocialIcons.styled'
 
 const SocialIcons = (): JSX.Element => (
   <Social>

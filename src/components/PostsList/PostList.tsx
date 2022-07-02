@@ -7,7 +7,7 @@ import { TFunction } from 'i18next'
 import { useTranslation } from 'next-i18next'
 
 import { DevtoPublishedArticle } from '../../interfaces/devto'
-import Card from '../Card'
+import Card from '../Card/Card'
 
 import {
   ListPostTitle,
@@ -19,7 +19,7 @@ import {
   PostInformation,
   PostsListContainer,
   PostsBodyDetails
-} from './styles'
+} from './PostList.styled'
 
 type PostsListProps = {
   posts: DevtoPublishedArticle[]
