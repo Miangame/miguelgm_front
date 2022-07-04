@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { TFunction } from 'i18next'
 import { useTranslation } from 'next-i18next'
 
@@ -51,4 +51,4 @@ const PresentationsList = ({
   )
 }
 
-export default PresentationsList
+export default memo(PresentationsList)

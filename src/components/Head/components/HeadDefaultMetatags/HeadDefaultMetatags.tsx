@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Head from 'next/head'
 
 const HeadDefaultMetatags = (): JSX.Element => (
@@ -16,4 +16,4 @@ const HeadDefaultMetatags = (): JSX.Element => (
   </Head>
 )
 
-export default React.memo(HeadDefaultMetatags)
+export default memo(HeadDefaultMetatags)

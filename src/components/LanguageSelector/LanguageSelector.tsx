@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { memo, useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 
 import { LOCALES_AVAILABLES } from '../../constants/locales'
@@ -10,9 +10,17 @@ import {
   LocaleSelectorList
 } from './LanguageSelector.styled'
 
+// TODO: refactor this component
 const LanguageSelector = (): JSX.Element => {
   const { pathname, asPath, locale, push, query } = useRouter()
   const [selectorOpened, setSelectorOpened] = useState<boolean>(false)
+  const timeout = useRef<ReturnType<typeof setTimeout>>()
+
+  useEffect(() => {
+    return () => {
+      clearTimeout(timeout.current)
+    }
+  }, [])
 
   const sortedLocales: string[] = LOCALES_AVAILABLES.sort((a, b) => {
     if (a === locale) return -1
@@ -27,7 +35,7 @@ const LanguageSelector = (): JSX.Element => {
   }
 
   const handleMouseLeave = (): void => {
-    setTimeout((): void => setSelectorOpened(false), 100)
+    timeout.current = setTimeout((): void => setSelectorOpened(false), 100)
   }
 
   const handleOpenSelector = (): void => {
@@ -53,4 +61,4 @@ const LanguageSelector = (): JSX.Element => {
   )
 }
 
-export default LanguageSelector
+export default memo(LanguageSelector)

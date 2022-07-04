@@ -11,8 +11,10 @@ export const BoxSkills = styled.section`
   padding: 20px;
   position: relative;
   transition: background-color 0.5s ease;
+`
 
-  p > span {
+export const Skill = styled.p`
+  span {
     background: ${colors.skillsBackground};
     border-radius: 4px;
     display: inline-block;

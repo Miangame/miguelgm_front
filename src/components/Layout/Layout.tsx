@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 import { LayoutProps } from '../../interfaces/layout'
 import Navbar from '../Navbar/Navbar'
@@ -14,4 +14,4 @@ const Layout = ({ children }: LayoutProps): JSX.Element => (
   </>
 )
 
-export default Layout
+export default memo(Layout)

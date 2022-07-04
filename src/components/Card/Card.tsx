@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { memo, ReactNode } from 'react'
 
 import {
   CardBody,
@@ -28,4 +28,4 @@ const Card = ({
   </CardContainer>
 )
 
-export default Card
+export default memo(Card)

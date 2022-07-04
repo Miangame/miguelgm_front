@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import React from 'react'
+import React, { memo } from 'react'
 import { useRouter } from 'next/router'
 import { BsHeart } from 'react-icons/bs'
 import { FaRegComment } from 'react-icons/fa'
@@ -38,6 +38,7 @@ const getCardBody = (
     public_reactions_count,
     url
   } = post
+
   return (
     <PostsBodyDetails>
       <PostInformation>
@@ -103,4 +104,4 @@ const PostsList = ({ posts }: PostsListProps): JSX.Element => {
   )
 }
 
-export default PostsList
+export default memo(PostsList)

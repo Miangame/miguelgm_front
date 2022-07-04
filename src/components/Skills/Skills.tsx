@@ -1,9 +1,9 @@
 import { useTranslation } from 'next-i18next'
-import React from 'react'
+import React, { memo } from 'react'
 
 import { skillGroups } from '../../data/skills'
 
-import { BoxSkills } from './Stkills.styled'
+import { BoxSkills, Skill } from './Skills.styled'
 
 const Skills = (): JSX.Element => {
   const { t } = useTranslation('skills')
@@ -23,11 +23,11 @@ const Skills = (): JSX.Element => {
                 }}
               ></span>
             </h3>
-            <p>
+            <Skill>
               {skills.map((skill, index) => (
                 <span key={index}>{skill}</span>
               ))}
-            </p>
+            </Skill>
           </div>
         )
       })}
@@ -35,4 +35,4 @@ const Skills = (): JSX.Element => {
   )
 }
 
-export default Skills
+export default memo(Skills)

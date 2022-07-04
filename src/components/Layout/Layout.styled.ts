@@ -5,7 +5,6 @@ import { media } from '../../theme/media'
 
 export const LayoutContainer = styled.main`
   width: 100%;
-  /* position: relative; */
   overflow-x: hidden;
   padding-bottom: env(safe-area-inset-bottom);
   display: flex;

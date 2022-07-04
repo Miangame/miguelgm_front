@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Head from 'next/head'
 
 const HeadLinks = (): JSX.Element => (
@@ -8,4 +8,4 @@ const HeadLinks = (): JSX.Element => (
   </Head>
 )
 
-export default React.memo(HeadLinks)
+export default memo(HeadLinks)
