@@ -6,8 +6,14 @@ import { Link, Social, StyledIcon } from './SocialIcons.styled'
 
 const SocialIcons = (): JSX.Element => (
   <Social>
-    {SOCIAL_MEDIA.map(({ link, icon: Icon }, index) => (
-      <Link key={index} href={link} target="_blank" rel="noreferrer">
+    {SOCIAL_MEDIA.map(({ link, icon: Icon, title }, index) => (
+      <Link
+        key={index}
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={title}
+      >
         <StyledIcon as={Icon} />
       </Link>
     ))}

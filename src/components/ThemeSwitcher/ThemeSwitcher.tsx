@@ -9,7 +9,12 @@ import { ThemeSwitcherButton } from './ThemeSwitcher.styled'
 const ThemeSwitcher = (): JSX.Element => {
   const darkMode = useDarkMode(false)
   return (
-    <ThemeSwitcherButton onClick={darkMode.toggle}>
+    <ThemeSwitcherButton
+      onClick={darkMode.toggle}
+      aria-label={
+        darkMode.value ? 'Switch to light mode' : 'Switch to dark mode'
+      }
+    >
       <div className={`moon-logo ${darkMode.value ? 'animate-show-moon' : ''}`}>
         <IoMdMoon color={colors.themeSwitcherIcon} />
       </div>
