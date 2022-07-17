@@ -22,7 +22,7 @@ const RightNav = (props: RightNavProps): JSX.Element => {
   return (
     <Ul open={open}>
       {HREFS.map(({ href: url, desc }, index) => (
-        <Link href={url} key={index}>
+        <Link href={url} key={index} passHref>
           <li className={route === url ? 'active' : undefined}>
             <a>{t(desc)}</a>
           </li>
