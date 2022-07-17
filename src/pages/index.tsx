@@ -16,8 +16,9 @@ import {
   QuoteHome,
   SubtitleHome,
   TitleHome,
-  QuoteHomeContainer
-} from '../components/pages/home/styles'
+  QuoteHomeContainer,
+  ParagraphDescription
+} from '../components/pages/home.styled'
 import Skills from '../components/Skills/Skills'
 import SocialIcons from '../components/SocialIcons/SocialIcons'
 
@@ -41,33 +42,27 @@ const Index = (): JSX.Element => {
         <SubtitleHome>{t('profession')}</SubtitleHome>
         <SocialIcons />
         <DescriptionHome>
-          <p>
-            <span
-              dangerouslySetInnerHTML={{
-                __html: t('home:description.presentation', {
-                  interpolation: { escapeValue: false }
-                })
-              }}
-            ></span>{' '}
-            <a href="https://genial.ly/" target="_blank" rel="noreferrer">
-              Genially
-            </a>
-            .
-          </p>
-          <p
+          <ParagraphDescription
+            dangerouslySetInnerHTML={{
+              __html: t('home:description.presentation', {
+                interpolation: { escapeValue: false }
+              })
+            }}
+          />
+          <ParagraphDescription
             dangerouslySetInnerHTML={{
               __html: t('home:description.description', {
                 interpolation: { escapeValue: false }
               })
             }}
-          ></p>
-          <p
+          />
+          <ParagraphDescription
             dangerouslySetInnerHTML={{
               __html: t('home:description.other', {
                 interpolation: { escapeValue: false }
               })
             }}
-          ></p>
+          />
         </DescriptionHome>
       </DescriptionHomeContainer>
       <AboutMe>

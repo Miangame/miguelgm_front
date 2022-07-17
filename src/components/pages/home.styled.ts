@@ -1,13 +1,13 @@
 import styled, { keyframes } from 'styled-components'
 
-import { media } from '../../../theme/media'
+import { media } from '../../theme/media'
 import {
   doublePx,
   quadruple,
   quadruplePx,
   singlePx,
   triplePx
-} from '../../../theme/space'
+} from '../../theme/space'
 
 const waveAnimation = keyframes`
    0% { transform: rotate( 0.0deg) }
@@ -70,15 +70,15 @@ export const SubtitleHome = styled.p`
   color: ${({ theme }): string => theme.colors.main};
 `
 
-export const DescriptionHome = styled.div`
-  p {
-    line-height: 1.6em;
-    font-size: 1rem;
+export const DescriptionHome = styled.section``
 
-    ${media.greaterThan('md')`
+export const ParagraphDescription = styled.p`
+  line-height: 1.6em;
+  font-size: 1rem;
+
+  ${media.greaterThan('md')`
       font-size: 1.3rem;
     `}
-  }
 `
 
 export const ImageHomeContainer = styled.picture`
