@@ -8,12 +8,12 @@
 
 <img width="700" src="https://raw.githubusercontent.com/Miangame/miguelgm_front/main/lighthouse_results/desktop/pagespeed.svg" /><br>
 
-<b>Full Reports:</b> <a href="https://raw.githubusercontent.com/Miangame/miguelgm_front/main/lighthouse_results/desktop/miguelgm_dev_.html" title="Check it out" target="_blank">Main Page </a>
+<b>Full Reports:</b> <a href="https://refined-github-html-preview.kidonng.workers.dev/Miangame/miguelgm_front/raw/main/lighthouse_results/desktop/miguelgm_dev_.html" title="Check it out" target="_blank">Main Page </a>
 
 <details><summary><b>Mobile (click to toggle)</b></summary><br>
 <img width="700" src="https://raw.githubusercontent.com/Miangame/miguelgm_front/main/lighthouse_results/mobile/pagespeed.svg" /><p></p>
 
-<b>Full Reports:</b> <a href="https://raw.githubusercontent.com/Miangame/miguelgm_front/main/lighthouse_results/mobile/miguelgm_dev_.html" title="Check it out" target="_blank">Main Page </a>
+<b>Full Reports:</b> <a href="https://refined-github-html-preview.kidonng.workers.dev/Miangame/miguelgm_front/raw/main/lighthouse_results/mobile/miguelgm_dev_.html" title="Check it out" target="_blank">Main Page </a>
 
 </details><p></p>
 
