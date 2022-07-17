@@ -13,7 +13,5 @@ module.exports = {
     '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.ts'
   },
   transformIgnorePatterns: ['./node_modules/'],
-  testPathIgnorePatterns: [
-    '<rootDir>/__tests__/config'
-  ]
+  testPathIgnorePatterns: ['<rootDir>/__tests__/config']
 }
