@@ -1,7 +1,12 @@
+import Link from 'next/link'
 import styled from 'styled-components'
 
 import { NavigationMenu } from '../../../../interfaces/navigationMenu'
 import { media } from '../../../../theme/media'
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+`
 
 export const Ul = styled.ul`
   list-style: none;

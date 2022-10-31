@@ -13,8 +13,7 @@ const ImageHome = (): JSX.Element => (
         alt="profile"
         src="/img/profile.webp"
         loading="lazy"
-        layout="fill"
-        objectFit="contain"
+        fill
       />
     </ProfileImageHomeContainer>
   </ImageHomeContainer>

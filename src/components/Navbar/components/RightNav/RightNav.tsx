@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 
@@ -7,7 +6,7 @@ import { HREFS } from '../../../../constants/routesHref'
 import LanguageSelector from '../../../LanguageSelector/LanguageSelector'
 import ThemeSwitcher from '../../../ThemeSwitcher/ThemeSwitcher'
 
-import { Ul } from './RightNav.styled'
+import { StyledLink, Ul } from './RightNav.styled'
 
 interface RightNavProps {
   open?: boolean
@@ -22,11 +21,9 @@ const RightNav = (props: RightNavProps): JSX.Element => {
   return (
     <Ul open={open}>
       {HREFS.map(({ href: url, desc }, index) => (
-        <Link href={url} key={index}>
-          <li className={route === url ? 'active' : undefined}>
-            <a href={url}>{t(desc)}</a>
-          </li>
-        </Link>
+        <li key={index} className={route === url ? 'active' : undefined}>
+          <StyledLink href={url}>{t(desc)}</StyledLink>
+        </li>
       ))}
       <li>
         <ThemeSwitcher />
