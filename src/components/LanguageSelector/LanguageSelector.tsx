@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useRef, useState } from 'react'
+import React, { memo, MouseEvent, useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 
 import { LOCALES_AVAILABLES } from '../../constants/locales'
