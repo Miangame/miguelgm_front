@@ -36,6 +36,9 @@ export const PostsListContainer = styled.div`
 export const PostsBodyDetails = styled.div`
   height: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 export const PostInformation = styled.div`
@@ -46,6 +49,7 @@ export const PostInformation = styled.div`
 export const PostAuthorImage = styled.img`
   display: inline-block;
   width: 43px;
+  height: 43px;
   position: relative;
   border-radius: 50%;
 `
