@@ -2,6 +2,7 @@
 import React from 'react'
 import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'react-i18next'
 
 import DevtoService from '../../services/DevtoService'
 import { DevtoPublishedArticle } from '../../interfaces/devto'
@@ -12,12 +13,16 @@ type PostsPageProps = {
   articles: DevtoPublishedArticle[]
 }
 
-const Posts = ({ articles }: PostsPageProps): JSX.Element => (
-  <>
-    <PostListTitle>Dev.to Posts</PostListTitle>
-    <PostsList posts={articles} />
-  </>
-)
+const Posts = ({ articles }: PostsPageProps): JSX.Element => {
+  const { t } = useTranslation('navbar')
+
+  return (
+    <>
+      <PostListTitle>{t('devto')}</PostListTitle>
+      <PostsList posts={articles} />
+    </>
+  )
+}
 
 export const getStaticProps: GetStaticProps = async ({ locale = 'es' }) => {
   const articles: DevtoPublishedArticle[] =
