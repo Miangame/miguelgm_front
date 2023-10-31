@@ -19,7 +19,7 @@ const Posts = ({ articles }: PostsPageProps): JSX.Element => (
   </>
 )
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
+export const getStaticProps: GetStaticProps = async ({ locale = 'es' }) => {
   const articles: DevtoPublishedArticle[] =
     await DevtoService.getDevtoArticles()
 
