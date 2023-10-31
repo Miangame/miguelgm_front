@@ -10,9 +10,13 @@ const { i18n } = require('./next-i18next.config')
 module.exports = withPWA({
   i18n,
   images: {
-    domains: ['res.cloudinary.com']
+    remotePatterns: [{
+      protocol: 'https',
+      hostname: 'res.cloudinary.com',
+      port: '',
+    }],
   },
-  experimental: {
-    appDir: true
+  compiler: {
+    styledComponents: true
   }
 })
