@@ -42,9 +42,7 @@ const PostPage = ({ article }: PostProps): JSX.Element => {
       </a>
       <PostTitle>{article?.title}</PostTitle>
       <PostTags>
-        {article?.tags.map((tag, index) => (
-          <span key={index}>#{tag}</span>
-        ))}
+        {article?.tags.map((tag, index) => <span key={index}>#{tag}</span>)}
       </PostTags>
       <PostAuthor>
         <Image
