@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { doubleAndHalfPx, halfPx, singleAndHalfPx } from '../../theme/space'
 
 type LocaleFlagProps = {
-  locale: string
+  locale?: string
 }
 
 export const LocaleSelectorContainer = styled.div`
