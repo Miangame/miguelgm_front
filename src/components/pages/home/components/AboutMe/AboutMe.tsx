@@ -14,9 +14,9 @@ const AboutMe = (): JSX.Element => {
       <div>
         <TitleHome>{t('home:experience')}</TitleHome>
         <a
-          download="cv-miguel-gavilan-merino.pdf"
           target="_blank"
-          href="../cv-miguel-gavilan-merino.pdf"
+          href="https://view.genial.ly/65ec183a8f27060014d44cbd"
+          rel="noreferrer"
         >
           {t('home:download_cv')}
         </a>
