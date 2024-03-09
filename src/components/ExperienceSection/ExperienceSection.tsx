@@ -80,7 +80,7 @@ const Experience = (): JSX.Element => {
       })}
 
       <VerticalTimelineElementCustom
-        iconStyle={{ background: themeContext.colors.main, color: '#fff' }}
+        iconStyle={{ background: themeContext?.colors.main, color: '#fff' }}
         icon={<AiFillStar color="FFF" />}
       />
     </VerticalTimelineCustom>
