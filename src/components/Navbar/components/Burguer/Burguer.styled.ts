@@ -3,7 +3,11 @@ import styled from 'styled-components'
 import { NavigationMenu } from '../../../../interfaces/navigationMenu'
 import { media } from '../../../../theme/media'
 
-export const StyledBurger = styled.div`
+interface StyledBurgerProps {
+  open: boolean
+}
+
+export const StyledBurger = styled.div<StyledBurgerProps>`
   width: 2rem;
   height: 2rem;
   position: fixed;
