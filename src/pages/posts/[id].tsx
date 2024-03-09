@@ -42,22 +42,26 @@ const PostPage = ({ article }: PostProps): JSX.Element => {
       </a>
       <PostTitle>{article?.title}</PostTitle>
       <PostTags>
-        {article?.tags.map((tag, index) => <span key={index}>#{tag}</span>)}
+        {article?.tags?.map((tag, index) => <span key={index}>#{tag}</span>)}
       </PostTags>
       <PostAuthor>
-        <Image
-          src={article?.user.profile_image}
-          alt={article?.user.name}
-          width={32}
-          height={32}
-          loading="lazy"
-        />
+        {article?.user && (
+          <Image
+            src={article?.user?.profile_image}
+            alt={article?.user?.name}
+            width={32}
+            height={32}
+            loading="lazy"
+          />
+        )}
         <p>
-          {article?.user.name}{' '}
+          {article?.user?.name}{' '}
           <span className="date">· {article?.readable_publish_date}</span>
         </p>
       </PostAuthor>
-      <PostBody dangerouslySetInnerHTML={{ __html: article?.body_html }} />
+      {article?.body_html && (
+        <PostBody dangerouslySetInnerHTML={{ __html: article?.body_html }} />
+      )}
     </PostContainer>
   )
 }
@@ -70,7 +74,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     (acc, next) => [
       ...acc,
       ...articles.map(({ id }) => ({
-        params: { id: id.toString() },
+        params: { id: id?.toString() },
         locale: next
       }))
     ],
@@ -83,9 +87,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
+export const getStaticProps: GetStaticProps = async ({
+  params,
+  locale = 'es'
+}) => {
   const article: DevtoPublishedArticle = await DevtoService.getArticle(
-    params.id as string
+    params?.id as string
   )
 
   return {

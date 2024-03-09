@@ -8,7 +8,7 @@ import {
 } from './Card.styled'
 
 type CardProps = {
-  image: string
+  image?: string
   cardBody: ReactNode
   clickable?: boolean
   onClick?: () => void

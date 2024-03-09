@@ -17,7 +17,7 @@ const Presentations = (): JSX.Element => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
+export const getStaticProps: GetStaticProps = async ({ locale = 'es' }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale, ['navbar', 'presentations']))

@@ -4,11 +4,15 @@ import styled from 'styled-components'
 import { NavigationMenu } from '../../../../interfaces/navigationMenu'
 import { media } from '../../../../theme/media'
 
+interface UlProps {
+  open?: boolean
+}
+
 export const StyledLink = styled(Link)`
   text-decoration: none;
 `
 
-export const Ul = styled.ul`
+export const Ul = styled.ul<UlProps>`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;

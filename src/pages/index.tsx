@@ -17,7 +17,7 @@ const Index = (): JSX.Element => (
   </HomeContainer>
 )
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
+export const getStaticProps: GetStaticProps = async ({ locale = 'es' }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale, [

@@ -18,16 +18,16 @@ const getCardBody = (t: TFunction, presentation: Presentation): JSX.Element => {
   const { title, description, code, schedule } = presentation
   return (
     <PresentationBodyDetails>
-      <h2>{t<string>(title)}</h2>
-      <p>{t<string>(description)}</p>
+      <h2>{t(title)}</h2>
+      <p>{t(description)}</p>
       <p className="bottom">
         {code && (
           <a href={code} target="_blank" rel="noreferrer">
-            {t<string>('code')}
+            {t('code')}
           </a>
         )}
         <a href={schedule} target="_blank" rel="noreferrer">
-          {t<string>('schedule')}
+          {t('schedule')}
         </a>
       </p>
     </PresentationBodyDetails>

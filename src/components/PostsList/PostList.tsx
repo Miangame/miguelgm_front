@@ -49,26 +49,26 @@ const getCardBody = (
         />
         <PostAuthorName>
           <p>
-            <span>{user.name}</span>
+            <span>{user?.name}</span>
           </p>
           <p className="date">{readable_publish_date}</p>
         </PostAuthorName>
       </PostInformation>
       <ListPostTitle>{title}</ListPostTitle>
       <ListPostTags>
-        {tag_list.map((tag, index) => (
+        {tag_list?.map((tag, index) => (
           <ListPostTag key={index}>#{tag}</ListPostTag>
         ))}
       </ListPostTags>
 
       <ListPostReactions>
-        {comments_count > 0 && (
+        {comments_count && comments_count > 0 && (
           <>
             <FaRegComment />
             <span>{comments_count} coment.</span>
           </>
         )}
-        {public_reactions_count > 0 && (
+        {public_reactions_count && public_reactions_count > 0 && (
           <>
             <BsHeart />
             <span>{public_reactions_count} reacc.</span>
@@ -77,7 +77,7 @@ const getCardBody = (
       </ListPostReactions>
       <p className="bottom">
         <a href={url} target="_blank" rel="noreferrer">
-          {t<string>('see_original_post')}
+          {t('see_original_post')}
         </a>
       </p>
     </PostsBodyDetails>
